@@ -1,4 +1,4 @@
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \beamer@sectionintoc {1}{Proceeding}{3}{0}{1}
 \beamer@sectionintoc {2}{Your first program}{9}{0}{2}
 \beamer@subsectionintoc {2}{1}{Hello World!}{11}{0}{2}

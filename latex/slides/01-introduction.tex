@@ -58,6 +58,9 @@
 		\item Tons of jobs for Java developers
 		\item[] \textbf{AND} for your questions and ideas for the course
 	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=0.5\linewidth]{../images/javawp.png}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[c]{}
@@ -100,12 +103,12 @@
 \end{frame}
 
 \begin{frame}[fragile]{Creating your Working Environment}
-  Open the Terminal
+  Open Terminal
   \begin{lstlisting}
-      mkdir myProgram
-      cd myProgram
+      mkdir MyProject
+      cd MyProject
       touch Hello.java
-      vim Hello.java
+      gedit Hello.java
   \end{lstlisting}
 \end{frame}
 
@@ -133,9 +136,8 @@
 \end{frame}
 
 \begin{frame}[fragile]{How to run your program}
-   save your program by pressing 'esc', then ':w'
-   exit vim by typing ':q' (and hit return)
-   then:
+   save your program by pressing 'ctrl+s'
+   and open the terminal again and type:
    \begin{lstlisting}[language=bash]
       javac Hello.java
       java Hello
