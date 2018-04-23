@@ -25,6 +25,4 @@ Also, add the information to the `_data/materials.yml` residing in the __gh-page
 
 
 
-These lessons were created and maintained by [@mangerlahn](https://github.com/mangerlahn), [@Pingu501](https://github.com/Pingu501) and [@LeonardFollner](https://github.com/LeonardFollner).
-
-They were adapted and improved by [@THinnerichs](https://github.com/THinnerichs) and [@vgerber](https://github.com/vgerber). 
+These lessons are created and maintained by [@mangerlahn](https://github.com/mangerlahn), [@Pingu501](https://github.com/Pingu501) and [@LeonardFollner](https://github.com/LeonardFollner).
