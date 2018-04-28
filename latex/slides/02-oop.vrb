@@ -1,0 +1,7 @@
+\frametitle{Class Student}
+\begin{lstlisting}
+public static void main(String[] args) {
+	Student peter = new Student();
+	peter.changeName("Peter");
+}
+\end{lstlisting}
