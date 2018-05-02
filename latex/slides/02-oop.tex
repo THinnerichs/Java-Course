@@ -2,7 +2,7 @@
 \input{../templates/course_information}
 
 \title{Java}
-\subtitle{Controll Statements and OOP}
+\subtitle{Controll Statements and Functions}
 \date{\today}
 
 \begin{document}
@@ -24,10 +24,11 @@
 		\item String
 	\end{itemize}
 	Hello World example
+	Switch variables example
 \end{frame}
 
-\section{Controll Statements}
-\begin{frame}{Controll Statements}
+\section{Control Statements}
+\begin{frame}{Control Statements}
 	
 	\begin{itemize}
 		\item if, else, else if
@@ -78,7 +79,9 @@ How to compare things:
     \item \texttt{>} Greater Than
     \item \texttt{>=} Greater or Equal than
 \end{itemize}
-\textit{Note}: You can concatenate multiple conditions\\ with \texttt{\&\&} (AND) or \texttt{||} (OR)
+
+\textit{Note \#1}: Those statements return an boolean value \\
+\textit{Note \#2}: You can concatenate multiple conditions\\ with \texttt{\&\&} (AND) or \texttt{||} (OR)
 \end{frame}
 
 \subsection{for}
@@ -105,6 +108,19 @@ public class ForExample {
 \end{lstlisting}
 \end{frame}
 
+\begin{frame}[fragile]{Another for example}
+	\begin{lstlisting}
+public class AnotherForExample {
+
+	public static void main(String[] args) {
+		for(int i = 0; i <= 10; i++) {
+			System.out.println(i);
+		}
+	}
+}	
+	\end{lstlisting}
+\end{frame}
+
 \subsection{while}
 \begin{frame}[fragile]{while}
 \begin{lstlisting}
@@ -113,7 +129,7 @@ while(condition) {
 }
 \end{lstlisting}
 \end{frame}
-
+	
 \begin{frame}[fragile]{while example}
 \begin{lstlisting}
 public class WhileExample {
@@ -130,7 +146,34 @@ public class WhileExample {
 \end{lstlisting}
 \end{frame}
 
+\begin{frame}[fragile]{Functions}
+	\begin{lstlisting}
+Type func_name (type parameters, ...) {
+	function statements;
+	\dots
+	return value;
+}
+	\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]{Functions example}
+	\begin{lstlisting}
+int add(int a, int b) {
+	int c = a + b;
+	System.out.println(c);
+	return c;
+}
+	\end{lstlisting}
+\end{frame}
 
+\begin{frame}[fragile]{Functions example}
+	\begin{lstlisting}
+int add(int a, int b) {
+	return a+b;
+}
+	\end{lstlisting}
+\end{frame}
+
+\ifx true false
 \section{OOP in Java}
 
 \begin{frame}{}
@@ -371,5 +414,6 @@ public static void main(String[] args) {
 }
 \end{lstlisting}
 \end{frame}
+\fi
 
 \end{document}
