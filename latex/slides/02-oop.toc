@@ -1,4 +1,4 @@
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \beamer@sectionintoc {1}{Recalling last session}{3}{0}{1}
 \beamer@sectionintoc {2}{Control Statements}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{Ite}{5}{0}{2}

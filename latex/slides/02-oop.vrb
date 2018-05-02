@@ -1,7 +1,5 @@
-\frametitle{Well known functions example}
-You all have written that before:
-	\begin{lstlisting}
-	public static void main(String[] args) {
-		...
-	}
-	\end{lstlisting}
+\frametitle{Adv. Exercise}
+\textbf{5. Find all primes up to n.}
+	\begin{example}	
+	Input: 11 Output: 2, 3, 5, 7, 11
+	\end{example}
