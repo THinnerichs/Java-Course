@@ -1,6 +1,7 @@
-\frametitle{Functions example}
-\begin{lstlisting}
-int add(int a, int b) {
-	return a+b;
-}
+\frametitle{Well known functions example}
+You all have written that before:
+	\begin{lstlisting}
+	public static void main(String[] args) {
+		...
+	}
 	\end{lstlisting}
