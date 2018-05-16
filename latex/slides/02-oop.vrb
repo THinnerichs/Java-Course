@@ -1,5 +1,5 @@
 \frametitle{Adv. Exercise}
 \textbf{5. Find all primes up to n.}
-	\begin{example}	
+	\begin{example}
 	Input: 11 Output: 2, 3, 5, 7, 11
 	\end{example}

@@ -2,10 +2,251 @@
 \input{../templates/course_information}
 
 \title{Java}
-\subtitle{Inheritance}
+\subtitle{Introduction to OOP and inheritance}
 \date{\today}
 
 \begin{document}
+
+\section{OOP in Java}
+
+\begin{frame}{}
+	\begin{center}
+		{\huge Object Oriented Programming}
+	\end{center}
+\end{frame}
+
+\subsection{General information}
+
+\begin{frame}[fragile]{Class Student}
+	\begin{lstlisting}
+	public class Student {
+	
+	// Attributes
+	private String name; 
+	private int matriculationNumber; 
+	
+	
+	// Methods
+	public void setName(String name) {
+	this.name = name;
+	}
+	
+	public int getMatriculationNumber() {
+	return matriculationNumber;
+	}
+	
+	}
+	\end{lstlisting}
+	
+	% What is visible here:
+	% Attributes store the state of the object
+	% Methods implement the behaviour of the object
+	
+\end{frame}
+
+\begin{frame}[fragile]{Creation}
+	We learned how to declare and assign a primitive datatype.}
+
+\begin{lstlisting}
+int a; // declare a
+a = 273; // assign 273 to a
+\end{lstlisting} 
+
+The creation of an object works similar.
+
+\begin{lstlisting}
+Student example = new Student(); 
+// create an instance of Student
+\end{lstlisting}
+The \textbf{object} derived from a \textbf{class} is also called \textbf{instance}.
+The variable is called the \textbf{reference}.
+\end{frame}
+
+\subsection{Methods}
+\begin{frame}[fragile]{Calling a Method}
+\begin{lstlisting}
+public class Student {
+
+private String name;
+
+public String getName() {
+return name;
+}
+
+public void setName(String newName) {
+name = newName;
+}
+
+}
+\end{lstlisting}
+The class \emph{Student} has two methods: \emph{void printTimetable()} and \emph{void printName()}.
+\end{frame}
+
+\begin{frame}[fragile]{Calling a Method}
+\begin{lstlisting}
+public class Main {
+
+public static void main(String[] args) {
+Student example = new Student(); // creation
+example.setName("Jane"); // method call
+String name = example.getName(); 
+System.out.println(name); // Prints "Jane"
+}
+
+}
+\end{lstlisting}
+You can call a method of an object after its creation with \textbf{reference.methodName();}.
+\end{frame}
+
+\begin{frame}[fragile]{Calling a Method}
+\begin{lstlisting}
+public class Student {
+
+private String name;
+
+public void setName(String newName) {
+name = newName;
+printName();   // Call own method
+this.printName(); // Or this way
+}
+
+public void printName() {
+System.out.println(name);
+}
+
+}
+\end{lstlisting}
+You can call a method of the own object by simply writing \textbf{methodName();} or \textbf{this.methodName();}
+\end{frame}
+
+\begin{frame}[fragile]{Methods with Arguments}
+
+\begin{lstlisting}
+public class Calc {
+
+public void add(int summand1, int summand2) {
+System.out.println(summand1 + summand2);
+}
+
+public static void main(String[] args) {
+int summandA = 1;
+int summandB = 2;
+Calc calculator = new Calc();
+System.out.print("1 + 2 = ");
+calculator.add(summandA, summandB); 
+// prints: 3
+}
+
+}
+\end{lstlisting}
+\end{frame}
+
+\subsection{Return Value}
+\begin{frame}[fragile]{Methods with Return Value}
+A method without a return value is indicated by \textbf{void}:
+\begin{lstlisting}
+public void add(int summand1, int summand2) {
+System.out.println(summand1 + summand2);
+}
+\end{lstlisting}
+A method with an \textbf{int} as return value:
+\begin{lstlisting}
+public int add(int summand1, int summand2) {
+return summand1 + summand2;
+}
+\end{lstlisting}
+% TODO explain return statement
+\end{frame}
+
+\begin{frame}[fragile]{Calling Methods with a return value}
+\begin{lstlisting}
+public class Calc {
+
+public int add(int summand1, int summand2) {
+return summand1 + summand2;
+}
+
+public static void main(String[] args) {
+Calc calculator = new Calc();
+int sum = calculator.add(3, 8);
+System.out.print("3 + 8 = " + sum); 
+// prints: 3 + 8 = 11
+}
+
+}
+\end{lstlisting}
+\end{frame}
+
+\subsection{Constructor}
+
+\begin{frame}[fragile]{Constructors}
+\begin{lstlisting}
+public class Calc {
+
+private int summand1;
+private int summand2;
+
+public Calc() {
+summand1 = 0;
+summand2 = 0;
+}
+
+}
+\end{lstlisting}
+A constructor gets called upon creation of the object
+\end{frame}
+
+\begin{frame}[fragile]{Constructors with Arguments}
+\begin{lstlisting}
+public class Calc {
+
+private int summand1;
+private int summand2;
+
+public Calc(int x, int y) {
+summand1 = x;
+summand2 = y;
+}
+
+}
+\end{lstlisting}
+\begin{lstlisting}
+[...]
+Calc myCalc = new Calc(7, 9);
+\end{lstlisting}
+
+A constructor can have arguments as well!
+\end{frame}
+
+\section{Conclusion}
+\subsection{An Example}
+
+\begin{frame}{An Example}
+You want to program an enrollment system, for a programming course. \\
+\vspace{1em}
+Your classes are:\\
+\begin{description}
+	\item[student] who wants to attend the course
+	\item[lesson] which is a part of the course
+	\item[tutor] the guy with the bandshirt
+	\item[room] where your lessons take place
+	\item[\dots]
+\end{description}
+% 	The more you think about it, the more complex this program becomes.
+% 	Focus on the relevant things.
+%	Think about how the objects can be in relation, this will be discussed later
+%	Show prepared classes in Java
+\end{frame}
+
+
+\begin{frame}[fragile]{Class Student}
+\begin{lstlisting}
+public static void main(String[] args) {
+Student peter = new Student();
+peter.changeName("Peter");
+}
+\end{lstlisting}
+\end{frame}
 
 \begin{frame}
 	\titlepage
