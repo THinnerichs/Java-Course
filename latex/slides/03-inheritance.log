@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  16 MAY 2018 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.5.17)  17 MAY 2018 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **03-inheritance.tex
 (./03-inheritance.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (../templates/course_definitions.tex
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2017/01/22 v3.40 A class for typesetting presentations
@@ -1339,7 +1339,7 @@ File: ../templates/fsr_logo_cropped.pdf Graphic file (type pdf)
 
 <use ../templates/fsr_logo_cropped.pdf>
 Package pdftex.def Info: ../templates/fsr_logo_cropped.pdf used on input line 2
-53.
+54.
 (pdftex.def)             Requested size: 47.09663pt x 35.56593pt.
  [14
 
@@ -1431,18 +1431,18 @@ Package pdftex.def Info: ../templates/fsr_logo_cropped.pdf used on input line 2
  (./03-inheritance.vrb) [31
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 546.
+LaTeX Font Info:    Try loading font information for U+msa on input line 547.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 546.
+LaTeX Font Info:    Try loading font information for U+msb on input line 547.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 546.
+line 547.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1476,11 +1476,11 @@ thkerncmss.
 \tf@snm=\write8
 \openout8 = `03-inheritance.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 600.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 600.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 601.
  (./03-inheritance.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 600.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 600.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 601.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 601.
 Package rerunfilecheck Info: File `03-inheritance.out' has not changed.
 (rerunfilecheck)             Checksum: 8DEA7B0A3D97888A8166BEC841D662DE;801.
 
@@ -1490,12 +1490,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19908 strings out of 494893
- 362853 string characters out of 6178672
- 586325 words of memory out of 5000000
- 22620 multiletter control sequences out of 15000+600000
+ 19907 strings out of 493013
+ 362843 string characters out of 6135682
+ 590943 words of memory out of 5000000
+ 22852 multiletter control sequences out of 15000+600000
  8693 words of font info for 33 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  58i,17n,62p,842b,1238s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
@@ -1505,7 +1505,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt8.pfb>
-Output written on 03-inheritance.pdf (35 pages, 223936 bytes).
+Output written on 03-inheritance.pdf (35 pages, 224020 bytes).
 PDF statistics:
  1149 PDF objects out of 1200 (max. 8388607)
  1078 compressed objects within 11 object streams

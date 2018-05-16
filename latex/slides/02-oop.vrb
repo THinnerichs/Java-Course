@@ -4,7 +4,7 @@
 
 		private int summand1;
 		private int summand2;
-	
+
 	    public Calc(int x, int y) {
 			summand1 = x;
 			summand2 = y;

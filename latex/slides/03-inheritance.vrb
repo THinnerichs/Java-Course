@@ -1,5 +1,5 @@
 \frametitle{Override toString() - Test}
-\begin{lstlisting}
+\begin{lstlisting}[escapechar=!]
 	public class PostOffice {
 
 	    public static void main(String[] args) {
