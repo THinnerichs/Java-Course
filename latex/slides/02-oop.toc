@@ -1,6 +1,8 @@
-\select@language {ngerman}
-\beamer@sectionintoc {1}{Recalling last session}{3}{0}{1}
-\beamer@sectionintoc {2}{Control Statements}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Ite}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{for}{8}{0}{2}
-\beamer@subsectionintoc {2}{3}{while}{11}{0}{2}
+\babel@toc {ngerman}{}
+\beamer@sectionintoc {1}{OOP in Java}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{General information}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Methods}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Return Value}{9}{0}{1}
+\beamer@subsectionintoc {1}{4}{Constructor}{11}{0}{1}
+\beamer@sectionintoc {2}{Conclusion}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{An Example}{13}{0}{2}
