@@ -17,9 +17,65 @@
 
 \subsection{General information}
 
+\begin{frame}[fragile]{What is OOP?}
+	We have a lot of objects around us\\
+	\begin{itemize}
+		\item They have a state and a behaviour
+		\item All have a building plan
+	\end{itemize}
+	
+	Classes $ \rightarrow $ building plan\\
+	Objects $ \rightarrow $ entity in real world build from building plan
+	
+\end{frame}
+
+\begin{frame}[fragile]{How to build a class}
+	\begin{lstlisting}
+		public class MyClass {
+			//Constructor to create the Object
+			public MyClass(){
+			...
+			}
+			
+			//Attributes to describe state
+			private int myAttribute;
+			...
+			
+			//Methods to describe behaviour
+			public MyMethod(int myParameter, ...) {
+				this.myAttribute = myParameter;
+				...
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{How to build a student?}
+	Attributes describing a student? \\
+	\pause 
+	\begin{itemize}
+		\item Name
+		\item Matriculation number
+		\item Age
+	\end{itemize}	
+	\pause
+	Methods describing its behaviour?
+	\pause
+	\begin{itemize}
+		\item Change name
+		\item Increase age
+		\item Calculate 1+1
+	\end{itemize}
+\end{frame}
+
 \begin{frame}[fragile]{Class Student}
 	\begin{lstlisting}
 	public class Student {
+	//Constructor
+	public Student (String name, int matriculationNumber) {
+	this.name = name;
+	this.matriculationNumber = matriculationNumber;
+	}
 	
 	// Attributes
 	private String name; 
@@ -72,14 +128,15 @@ private String name;
 public String getName() {
 return name;
 }
-
 public void setName(String newName) {
 name = newName;
 }
-
+public void printName(){
+System.out.println(this.name);
+}
 }
 \end{lstlisting}
-The class \emph{Student} has two methods: \emph{void printTimetable()} and \emph{void printName()}.
+The class \emph{Student} has three methods: \emph{void printName()}.
 \end{frame}
 
 \begin{frame}[fragile]{Calling a Method}
@@ -91,6 +148,8 @@ Student example = new Student(); // creation
 example.setName("Jane"); // method call
 String name = example.getName(); 
 System.out.println(name); // Prints "Jane"
+
+example.printName();
 }
 
 }
@@ -275,14 +334,14 @@ peter.changeName("Peter");
 				return "Peter";
 			}
 			
-			private String getFavouritePorn() {
+			private String getFavouriteFilm() {
 				return "...";
 			}
 		}
 	
 		// [...]
 		exampleStudent.getName(); // Works!
-		exampleStudent.getFavouritePorn(); // Error
+		exampleStudent.getFavouriteFilm(); // Error
 	
 	\end{lstlisting}
 	
