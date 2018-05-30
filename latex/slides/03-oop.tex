@@ -1,0 +1,661 @@
+\input{../templates/course_definitions}
+\input{../templates/course_information}
+
+\title{Java}
+\subtitle{Introduction to OOP and inheritance}
+\date{\today}
+
+\begin{document}
+
+\section{OOP in Java}
+
+\begin{frame}{}
+	\begin{center}
+		{\huge Object Oriented Programming}
+	\end{center}
+\end{frame}
+
+\subsection{General information}
+
+\begin{frame}[fragile]{What is OOP?}
+	We have a lot of objects around us\\
+	\begin{itemize}
+		\item They have a state and a behaviour
+		\item All have a building plan
+	\end{itemize}
+	
+	Classes $ \rightarrow $ building plan\\
+	Objects $ \rightarrow $ entity in real world build from building plan
+	
+\end{frame}
+
+\begin{frame}[fragile]{How to build a class}
+	\begin{lstlisting}
+		public class MyClass {
+			//Constructor to create the Object
+			public MyClass(){
+			...
+			}
+			
+			//Attributes to describe state
+			private int myAttribute;
+			...
+			
+			//Methods to describe behaviour
+			public MyMethod(int myParameter, ...) {
+				this.myAttribute = myParameter;
+				...
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{How to build a student?}
+	Attributes describing a student? \\
+	\pause 
+	\begin{itemize}
+		\item Name
+		\item Matriculation number
+		\item Age
+	\end{itemize}	
+	\pause
+	Methods describing its behaviour?
+	\pause
+	\begin{itemize}
+		\item Change name
+		\item Increase age
+		\item Calculate 1+1
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Class Student}
+	\begin{lstlisting}
+	public class Student {
+	//Constructor
+	public Student (String name, int matriculationNumber) {
+	this.name = name;
+	this.matriculationNumber = matriculationNumber;
+	}
+	
+	// Attributes
+	private String name; 
+	private int matriculationNumber; 
+	
+	
+	// Methods
+	public void setName(String name) {
+	this.name = name;
+	}
+	
+	public int getMatriculationNumber() {
+	return matriculationNumber;
+	}
+	
+	}
+	\end{lstlisting}
+	
+	% What is visible here:
+	% Attributes store the state of the object
+	% Methods implement the behaviour of the object
+	
+\end{frame}
+
+\begin{frame}[fragile]{Creation}
+	We learned how to declare and assign a primitive datatype.}
+
+\begin{lstlisting}
+int a; // declare a
+a = 273; // assign 273 to a
+\end{lstlisting} 
+
+The creation of an object works similar.
+
+\begin{lstlisting}
+Student example = new Student(); 
+// create an instance of Student
+\end{lstlisting}
+The \textbf{object} derived from a \textbf{class} is also called \textbf{instance}.
+The variable is called the \textbf{reference}.
+\end{frame}
+
+\subsection{Methods}
+\begin{frame}[fragile]{Calling a Method}
+\begin{lstlisting}
+public class Student {
+
+private String name;
+
+public String getName() {
+return name;
+}
+public void setName(String newName) {
+name = newName;
+}
+public void printName(){
+System.out.println(this.name);
+}
+}
+\end{lstlisting}
+The class \emph{Student} has three methods: \emph{void printName()}.
+\end{frame}
+
+\begin{frame}[fragile]{Calling a Method}
+\begin{lstlisting}
+public class Main {
+
+public static void main(String[] args) {
+Student example = new Student(); // creation
+example.setName("Jane"); // method call
+String name = example.getName(); 
+System.out.println(name); // Prints "Jane"
+
+example.printName();
+}
+
+}
+\end{lstlisting}
+You can call a method of an object after its creation with \textbf{reference.methodName();}.
+\end{frame}
+
+\begin{frame}[fragile]{Calling a Method}
+\begin{lstlisting}
+public class Student {
+
+private String name;
+
+public void setName(String newName) {
+name = newName;
+printName();   // Call own method
+this.printName(); // Or this way
+}
+
+public void printName() {
+System.out.println(name);
+}
+
+}
+\end{lstlisting}
+You can call a method of the own object by simply writing \textbf{methodName();} or \textbf{this.methodName();}
+\end{frame}
+
+\begin{frame}[fragile]{Methods with Arguments}
+
+\begin{lstlisting}
+public class Calc {
+
+public void add(int summand1, int summand2) {
+System.out.println(summand1 + summand2);
+}
+
+public static void main(String[] args) {
+int summandA = 1;
+int summandB = 2;
+Calc calculator = new Calc();
+System.out.print("1 + 2 = ");
+calculator.add(summandA, summandB); 
+// prints: 3
+}
+
+}
+\end{lstlisting}
+\end{frame}
+
+\subsection{Return Value}
+\begin{frame}[fragile]{Methods with Return Value}
+A method without a return value is indicated by \textbf{void}:
+\begin{lstlisting}
+public void add(int summand1, int summand2) {
+System.out.println(summand1 + summand2);
+}
+\end{lstlisting}
+A method with an \textbf{int} as return value:
+\begin{lstlisting}
+public int add(int summand1, int summand2) {
+return summand1 + summand2;
+}
+\end{lstlisting}
+% TODO explain return statement
+\end{frame}
+
+\begin{frame}[fragile]{Calling Methods with a return value}
+\begin{lstlisting}
+public class Calc {
+
+public int add(int summand1, int summand2) {
+return summand1 + summand2;
+}
+
+public static void main(String[] args) {
+Calc calculator = new Calc();
+int sum = calculator.add(3, 8);
+System.out.print("3 + 8 = " + sum); 
+// prints: 3 + 8 = 11
+}
+
+}
+\end{lstlisting}
+\end{frame}
+
+\subsection{Constructor}
+
+\begin{frame}[fragile]{Constructors}
+\begin{lstlisting}
+public class Calc {
+
+private int summand1;
+private int summand2;
+
+public Calc() {
+summand1 = 0;
+summand2 = 0;
+}
+
+}
+\end{lstlisting}
+A constructor gets called upon creation of the object
+\end{frame}
+
+\begin{frame}[fragile]{Constructors with Arguments}
+\begin{lstlisting}
+public class Calc {
+
+private int summand1;
+private int summand2;
+
+public Calc(int x, int y) {
+summand1 = x;
+summand2 = y;
+}
+
+}
+\end{lstlisting}
+\begin{lstlisting}
+[...]
+Calc myCalc = new Calc(7, 9);
+\end{lstlisting}
+
+A constructor can have arguments as well!
+\end{frame}
+
+\section{Conclusion}
+\subsection{An Example}
+
+\begin{frame}{Let's build a car}
+Create a car with doors, wheels, gas, seats,... \\
+\vspace{1em}
+Focus on:
+\begin{description}
+	\item[ID] unique id for each car
+	\item[Car] gas, speed
+	\item[Doors] can open/close
+	\item[Wheels] air pressure, size,...
+	\item[Seats] free, quality
+	\item[\dots]
+\end{description}
+Also implement refueling, open/close doors, decrease/increase air pressure,...
+% 	The more you think about it, the more complex this program becomes.
+% 	Focus on the relevant things.
+%	Think about how the objects can be in relation, this will be discussed later
+%	Show prepared classes in Java
+\end{frame}
+
+
+\begin{frame}[fragile]{Class Student}
+\begin{lstlisting}
+public static void main(String[] args) {
+Student peter = new Student();
+peter.changeName("Peter");
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+\begin{frame}{Overview}
+	\setbeamertemplate{section in toc}[sections numbered]
+	\tableofcontents
+\end{frame}
+
+\section{Visibilities}
+\begin{frame}[fragile]{Visibilities}
+	\begin{itemize}
+		\item public
+		\item private
+		\item protected
+	\end{itemize}
+\end{frame}
+	
+\begin{frame}[fragile]{Visibilities}
+
+	\begin{lstlisting}
+	
+		public class Student {
+			public String getName() {
+				return "Peter";
+			}
+			
+			private String getFavouriteFilm() {
+				return "...";
+			}
+		}
+	
+		// [...]
+		exampleStudent.getName(); // Works!
+		exampleStudent.getFavouriteFilm(); // Error
+	
+	\end{lstlisting}
+	
+\end{frame}
+
+
+\section{Arrays}
+\begin{frame}[fragile]{Array}
+	An array is a data-type that can hold a \textbf{fixed number} of elements. 
+	An Element can be any simple data-type or object.
+	\begin{lstlisting}
+	public static void main(String[] args) {
+	
+	    int[] intArray = new int[10];
+	    intArray[8] = 7; // assign 7 to the 9th element
+	    intArray[9] = 8; // assign 8 to the last element
+	    
+	    System.out.println(intArray[8]); // prints: 7
+	}
+	\end{lstlisting}
+	You can access every element via an index. A n-element array has indexes from 0 to (n-1).
+\end{frame}
+
+\begin{frame}[fragile]{Array Initialization} % AE
+	You can initialize an array with a set of elements.
+	\begin{lstlisting}
+	public static void main(String[] args) {
+	
+	    int[] intArray = {3, 2, 7};
+	    
+	    System.out.println(intArray[0]); // prints: 3
+	    System.out.println(intArray[1]); // prints: 2
+	    System.out.println(intArray[2]); // prints: 7
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Alternative Declaration}
+	There two possible positions for the square brackets. 
+	%I would recommend the first version to improve readability.
+	\begin{lstlisting}
+	public static void main(String[] args) {
+
+	    // version 1	
+	    int[] intArray1 = new int[10];
+	    
+	    // version 2
+	    int intArray2[] = new int[10];
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Multi-Dimensional Array}
+\begin{frame}[fragile]{2-Dimensional Array}
+	Arrays work with more than one dimension. 
+	An m-dimensional array has m indexes for one element.
+	\begin{lstlisting}
+	public static void main(String[] args) {
+
+	    // an array with 100 elements
+	    int[][] intArray = new int[10][10];
+	    
+	    intArray[0][0] = 0;
+	    intArray[0][9] = 9;
+	    intArray[9][9] = 99;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Assignment with Loops}
+	Loops are often used to assign elements in arrays.
+	\begin{lstlisting}
+	public static void main(String[] args) {
+
+	    int[][] intArray = new int[10][10];
+	    
+	    for(int i = 0; i < 10; i++) {
+	        for(int j = 0; j < 10; j++) {
+	            intArray[i][j] = i*10 + j;
+	        }
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Arrays with objects}
+	Loops are often used to assign elements in arrays.
+	\begin{lstlisting}
+	public static void main(String[] args) {
+
+	    Student[][] studentArray = new Student[10][10];
+	    
+	    for(int i = 0; i < 10; i++) {
+	        for(int j = 0; j < 10; j++) {
+	            intArray[i][j] = new Student();
+	        }
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+\section{Inheritance}
+\subsection{Inheritance}
+
+
+\begin{frame}[fragile]{A special Delivery}
+	Our class \emph{Letter} is a kind of \emph{Delivery} denoted by the keyword \textbf{extends}.
+	\begin{itemize}
+		\item \emph{Letter} is a \textbf{subclass} of the class \emph{Delivery}
+		\item \emph{Delivery} is the \textbf{superclass} of the class \emph{Letter}
+	\end{itemize}
+	\begin{lstlisting}
+	public class Letter extends Delivery {
+	
+	}
+	\end{lstlisting}
+	\vfill
+	As mentioned implicitly above a class can has multiple subclasses. 
+	But a class can only inherit directly from one superclass.
+\end{frame}
+
+\begin{frame}[fragile]{Example}
+	We have the classes: \emph{PostOffice}, \emph{Delivery} and \emph{Letter}.
+	They will be used for every example in this section and they will grow over time.
+	\begin{lstlisting}
+	public class Delivery {
+	
+	    private String address;
+	    private String sender;
+	    
+	    public void setAddress(String addr) {
+			address = addr;
+	    }
+	    
+	    public void setSender(String snd) {
+			sender = snd;
+	    }
+	    
+	    public void printAddress() {
+	        System.out.println(this.address);
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Inherited Methods}
+	The class \emph{Letter} also inherits all methods from the superclass \emph{Delivery}.
+	\begin{lstlisting}
+	public class PostOffice {
+	
+	    public static void main(String[] args) {
+	    
+	        Letter letter = new Letter();
+	        
+	        letter.setAddress("cafe ascii, Dresden");
+	        
+	        letter.printAddress();
+	        // prints: cafe ascii, Dresden
+	    }	
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Override Methods}
+	The method printAddress() is now additional definded in \emph{Letter}.
+	\begin{lstlisting}[escapechar=!]
+	public class Letter extends Delivery {
+	
+	    @Override
+	    public void printAddress() {
+	        System.out.println("a letter for " + this.address);    
+	    }	
+	}
+	\end{lstlisting}
+	% programer is AE
+	\texttt{@Override} is an annotation. 
+	It helps the programer to identify overwritten methods.
+	It is not neccessary for running the code but improves readability.
+	What annotations else can do we discuss in a future lesson.
+\end{frame}
+\begin{frame}[fragile]{Override Methods}
+	Now the method \texttt{printAddress()} defined in \emph{Letter} will be used instead of the method defined
+	in the superclass \emph{Delivery}.
+	\begin{lstlisting}
+	public class PostOffice {
+	
+	    public static void main(String[] args) {
+	    
+	        Letter letter = new Letter();
+	        
+	        letter.setAddress("cafe ascii, Dresden");
+	        
+	        letter.printAddress();
+	        // prints: a letter for cafe ascii, Dresden
+	    }	
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Constructor}
+\begin{frame}[fragile]{Super()}
+	If we define a \textbf{constructor with arguments} in \emph{Delivery} we have to define a constructor
+	with the same list of arguments in every subclass.
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public class Delivery {
+	
+	    private String address;
+	    private String sender;
+	    
+	    public Delivery(String address, String sender) {
+	        this.address = address;
+	        this.sender = sender;
+	    }
+	    	    
+	    public void printAddress() {
+	        System.out.println(address);
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Super()}
+	For the constructor in the subclass \emph{Letter} we can use \texttt{super()} to call the constructor
+	from the superclass.
+	\begin{lstlisting}[escapechar=!]
+	public class Letter extends Delivery {
+
+	    public Letter(String address, String sender) {
+	        super(address, sender);
+	    }
+	
+	    @Override
+	    public void printAddress() {
+	        System.out.println("a letter for " + this.address);    
+	    }	
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Super() - Test}
+	\begin{lstlisting}
+	public class PostOffice {
+	    
+	    public static void main(String[] args) {	    
+	        Letter letter = 
+	            new Letter("cafe ascii, Dresden", "");
+	        
+	        letter.printAddress();
+	        // prints: a letter for cafe ascii, Dresden
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Implicit Inheritance}
+\begin{frame}{Object}
+	Every class is a subclass from the class \emph{Object}. 
+	Therefore every class inherits methods from \emph{Object}.
+	\vfill
+	See \scriptsize\url{http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html} \normalsize for
+	a full reference of the class \emph{Object}.
+\end{frame}
+
+\begin{frame}[fragile]{toString()}
+	\emph{Letter} is a subclass of \emph{Object}.
+	Therefore \emph{Letter} inherits the method \texttt{toString()} from \emph{Object}.\\
+	\texttt{System.out.println(argument)} will call \texttt{argument.toString()} to receive
+	a printable String.
+	\begin{lstlisting}[escapechar=!]
+	public class PostOffice {
+	    
+	    public static void main(String[] args) {	    
+	        Letter letter = 
+	            new Letter("cafe ascii, Dresden", "");
+	        
+	        System.out.println(letter);
+	        // prints: Letter@_some_HEX-value_
+	        // for example: Letter@4536ad4d
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Override toString()}
+	\begin{lstlisting}[escapechar=!]
+	public class Letter extends Delivery {
+
+	    public Letter(String address, String sender) {
+	        super(address, sender);
+	    }
+	
+	    @Override
+	    public String toString() {
+	        return "a letter for " + this.address;
+	    }	
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Override toString() - Test}
+	\begin{lstlisting}[escapechar=!]
+	public class PostOffice {
+	    
+	    public static void main(String[] args) {	    
+	        Letter letter = 
+	            new Letter("cafe ascii, Dresden", "");
+	        
+	        System.out.println(letter);
+	        // a letter for cafe ascii, Dresden
+	    }
+	}
+	\end{lstlisting}
+\end{frame}
+
+
+\end{document}

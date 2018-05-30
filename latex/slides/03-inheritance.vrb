@@ -1,13 +1,20 @@
-\frametitle{Override toString() - Test}
-\begin{lstlisting}[escapechar=!]
-	public class PostOffice {
+\frametitle{Methods with Arguments}
 
-	    public static void main(String[] args) {
-	        Letter letter =
-	            new Letter("cafe ascii, Dresden", "");
+\begin{lstlisting}
+public class Calc {
 
-	        System.out.println(letter);
-	        // a letter for cafe ascii, Dresden
-	    }
-	}
-	\end{lstlisting}
+public void add(int summand1, int summand2) {
+System.out.println(summand1 + summand2);
+}
+
+public static void main(String[] args) {
+int summandA = 1;
+int summandB = 2;
+Calc calculator = new Calc();
+System.out.print("1 + 2 = ");
+calculator.add(summandA, summandB);
+// prints: 3
+}
+
+}
+\end{lstlisting}
