@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.5.17)  17 MAY 2018 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  30 MAY 2018 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**02-oop.tex
-(./02-oop.tex
+**02-basic_control_statements.tex
+(./02-basic_control_statements.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
 (../templates/course_definitions.tex
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2017/01/22 v3.40 A class for typesetting presentations
@@ -1073,8 +1073,8 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ))
-(../templates/course_information.tex) (./02-oop.aux)
-\openout1 = `02-oop.aux'.
+(../templates/course_information.tex) (./02-basic_control_statements.aux)
+\openout1 = `02-basic_control_statements.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1171,9 +1171,9 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(./02-oop.out) (./02-oop.out)
+(./02-basic_control_statements.out) (./02-basic_control_statements.out)
 \@outlinefile=\write5
-\openout5 = `02-oop.out'.
+\openout5 = `02-basic_control_statements.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 8.
@@ -1254,7 +1254,8 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 8.
 \c@lstlisting=\count179
- (./02-oop.nav)
+
+(./02-basic_control_statements.nav)
 <../templates/fsr_logo_cropped.pdf, id=48, 547.64598pt x 413.545pt>
 File: ../templates/fsr_logo_cropped.pdf Graphic file (type pdf)
 
@@ -1273,14 +1274,15 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ped.pdf>] [2
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb) [3
+ (./02-basic_control_statements.vrb) [3
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb
+
+(./02-basic_control_statements.vrb
 ! Extra }, or forgotten \endgroup.
 l.2 ...o declare and assign a primitive datatype.}
                                                   
@@ -1293,65 +1295,68 @@ deleted material, e.g., by typing `I$}'.
 ) [4
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb) [5
-
-]
-\openout4 = `02-oop.vrb'.
-
- (./02-oop.vrb) [6
+ (./02-basic_control_statements.vrb) [5
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb) [7
 
-]
-\openout4 = `02-oop.vrb'.
-
- (./02-oop.vrb)
-[8
+(./02-basic_control_statements.vrb) [6
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb) [9
-
-]
-\openout4 = `02-oop.vrb'.
-
- (./02-oop.vrb) [10
+ (./02-basic_control_statements.vrb)
+[7
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb) [11
+ (./02-basic_control_statements.vrb) [8
 
 ]
-\openout4 = `02-oop.vrb'.
+\openout4 = `02-basic_control_statements.vrb'.
 
- (./02-oop.vrb)
+ (./02-basic_control_statements.vrb) [9
+
+]
+\openout4 = `02-basic_control_statements.vrb'.
+
+ (./02-basic_control_statements.vrb) [10
+
+]
+\openout4 = `02-basic_control_statements.vrb'.
+
+
+(./02-basic_control_statements.vrb) [11
+
+]
+\openout4 = `02-basic_control_statements.vrb'.
+
+ (./02-basic_control_statements.vrb)
 [12
 
 ] [13
 
 ]
 \tf@nav=\write6
-\openout6 = `02-oop.nav'.
+\openout6 = `02-basic_control_statements.nav'.
 
 \tf@toc=\write7
-\openout7 = `02-oop.toc'.
+\openout7 = `02-basic_control_statements.toc'.
 
 \tf@snm=\write8
-\openout8 = `02-oop.snm'.
+\openout8 = `02-basic_control_statements.snm'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
- (./02-oop.aux)
+ (./02-basic_control_statements.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
-Package rerunfilecheck Info: File `02-oop.out' has not changed.
+Package rerunfilecheck Info: File `02-basic_control_statements.out' has not cha
+nged.
 (rerunfilecheck)             Checksum: 781C9CC6E7961E66F419AD84CBC8B0CE;397.
 
 
@@ -1360,13 +1365,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19611 strings out of 493013
- 357181 string characters out of 6135682
- 623942 words of memory out of 5000000
- 22665 multiletter control sequences out of 15000+600000
+ 19611 strings out of 494893
+ 357916 string characters out of 6178672
+ 619325 words of memory out of 5000000
+ 22432 multiletter control sequences out of 15000+600000
  6276 words of font info for 23 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 58i,17n,55p,834b,1238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 58i,17n,55p,855b,1238s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
@@ -1374,7 +1379,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on 02-oop.pdf (13 pages, 141394 bytes).
+Output written on 02-basic_control_statements.pdf (13 pages, 141446 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
  425 compressed objects within 5 object streams

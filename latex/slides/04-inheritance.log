@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  30 MAY 2018 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  30 MAY 2018 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**03-oop.tex
-(./03-oop.tex
+**04-inheritance.tex
+(./04-inheritance.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
 (../templates/course_definitions.tex
@@ -1073,23 +1073,30 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ))
-(../templates/course_information.tex) (./03-oop.aux)
-\openout1 = `03-oop.aux'.
+(../templates/course_information.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks46
+\verbatim@line=\toks47
+\verbatim@in@stream=\read2
+)
+(./04-inheritance.aux)
+\openout1 = `04-inheritance.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1132,12 +1139,12 @@ LaTeX Font Info:    ... okay on input line 8.
 \scratchbox=\box81
 \nofMPsegments=\count173
 \nofMParguments=\count174
-\everyMPshowfont=\toks46
+\everyMPshowfont=\toks48
 \MPscratchCnt=\count175
 \MPscratchDim=\dimen259
 \MPnumerator=\count176
 \makeMPintoPDFobject=\count177
-\everyMPtoPDFconversion=\toks47
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1157,7 +1164,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring OFF on input line 8.
+Package hyperref Info: Link coloring OFF on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1167,66 +1174,66 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count178
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
 
-(./03-oop.out) (./03-oop.out)
+(./04-inheritance.out) (./04-inheritance.out)
 \@outlinefile=\write5
-\openout5 = `03-oop.out'.
+\openout5 = `04-inheritance.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 8.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 9.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 9.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 8.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 9.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 8.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 9.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 8.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 8.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 9.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 8.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 8.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 9.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 8.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 8.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 8.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 9.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 8.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 8.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 9.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 8
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 9
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-8.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 8.
+ut line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1252,144 +1259,143 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 8.
+LaTeX Info: Redefining \includegraphics on input line 9.
 \c@lstlisting=\count179
- (./03-oop.nav)
+
+(./04-inheritance.nav)
+<../templates/fsr_logo_cropped.pdf, id=44, 547.64598pt x 413.545pt>
+File: ../templates/fsr_logo_cropped.pdf Graphic file (type pdf)
+
+<use ../templates/fsr_logo_cropped.pdf>
+Package pdftex.def Info: ../templates/fsr_logo_cropped.pdf used on input line 1
+4.
+(pdftex.def)             Requested size: 47.09663pt x 35.56593pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 16.
+(Font)              size <5> substituted on input line 14.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../templates/fsr_logo_crop
+ped.pdf>] (./04-inheritance.toc) [2
 
 ]
-\openout4 = `03-oop.vrb'.
+\openout4 = `04-inheritance.vrb'.
 
- (./03-oop.vrb
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+ (./04-inheritance.vrb) [3
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+
+(./04-inheritance.vrb) [4
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb) [5
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb)
+[6
+
+] [7
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb) [8
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb) [9
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+
+(./04-inheritance.vrb) [10
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb) [11
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb)
+[12
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb) [13
+
+]
+\openout4 = `04-inheritance.vrb'.
+
+ (./04-inheritance.vrb) [14
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 317.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+LaTeX Font Info:    Try loading font information for U+msb on input line 317.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 8.
+line 317.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-))
-[2
+)
+[15
 
 ]
-\openout4 = `03-oop.vrb'.
+\openout4 = `04-inheritance.vrb'.
 
- (./03-oop.vrb) [3
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [4
-
-] (./03-oop.vrb) [5
-
-] (./03-oop.vrb)
-[6
-
-] (./03-oop.vrb) [7
+ (./04-inheritance.vrb) [16
 
 ]
-\openout4 = `03-oop.vrb'.
+\openout4 = `04-inheritance.vrb'.
 
- (./03-oop.vrb)
-Overfull \vbox (11.76926pt too high) detected at line 101
- []
-
-[8
+ (./04-inheritance.vrb) [17
 
 ]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb
-! Extra }, or forgotten \endgroup.
-l.2 ...o declare and assign a primitive datatype.}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-) [9
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [10
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [11
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [12
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [13
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [14
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [15
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [16
-
-]
-\openout4 = `03-oop.vrb'.
+\openout4 = `04-inheritance.vrb'.
 
 
-(./03-oop.vrb) [17
+(./04-inheritance.vrb) [18
 
-] [18
-
-]
-\openout4 = `03-oop.vrb'.
-
- (./03-oop.vrb) [19
+] [19
 
 ]
 \tf@nav=\write6
-\openout6 = `03-oop.nav'.
+\openout6 = `04-inheritance.nav'.
 
 \tf@toc=\write7
-\openout7 = `03-oop.toc'.
+\openout7 = `04-inheritance.toc'.
 
 \tf@snm=\write8
-\openout8 = `03-oop.snm'.
+\openout8 = `04-inheritance.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
- (./03-oop.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
-Package rerunfilecheck Info: File `03-oop.out' has not changed.
-(rerunfilecheck)             Checksum: 403535A09D4A256002BAD074F9967DBE;399.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+ (./04-inheritance.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package rerunfilecheck Info: File `04-inheritance.out' has not changed.
+(rerunfilecheck)             Checksum: 448992D1D319BEFFD2600CA392DD4FFD;341.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1397,25 +1403,25 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19632 strings out of 494893
- 357428 string characters out of 6178672
- 562325 words of memory out of 5000000
- 22411 multiletter control sequences out of 15000+600000
- 9165 words of font info for 34 fonts, out of 8000000 for 9000
+ 19765 strings out of 494893
+ 361133 string characters out of 6178672
+ 543325 words of memory out of 5000000
+ 22547 multiletter control sequences out of 15000+600000
+ 8693 words of font info for 33 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,17n,63p,834b,1238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,17n,62p,842b,1241s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt8.pfb>
-Output written on 03-oop.pdf (19 pages, 133375 bytes).
+Output written on 04-inheritance.pdf (19 pages, 170593 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 589 compressed objects within 6 object streams
- 46 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 645 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

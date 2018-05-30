@@ -1,0 +1,13 @@
+\frametitle{Override toString() - Test}
+\begin{lstlisting}[escapechar=!]
+	public class PostOffice {
+
+	public static void main(String[] args) {
+	Letter letter =
+	new Letter("cafe ascii, Dresden", "");
+
+	System.out.println(letter);
+	// a letter for cafe ascii, Dresden
+	}
+	}
+	\end{lstlisting}

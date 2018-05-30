@@ -1,0 +1,7 @@
+\select@language {ngerman}
+\beamer@sectionintoc {1}{One more OOP exercise!}{3}{0}{1}
+\beamer@sectionintoc {2}{Visibilities}{4}{0}{2}
+\beamer@sectionintoc {3}{Inheritance}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Inheritance}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Constructor}{12}{0}{3}
+\beamer@subsectionintoc {3}{3}{Implicit Inheritance}{15}{0}{3}
