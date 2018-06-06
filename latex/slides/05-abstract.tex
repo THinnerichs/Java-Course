@@ -5,13 +5,90 @@
 \subtitle{Abstract}
 \date{\today}
 
+\usepackage{tabularx}
+
 \begin{document}
 
 \begin{frame}
 	\titlepage
 \end{frame}
 
-\section{Abstract}
+\begin{frame}
+	\tableofcontents
+\end{frame}
+
+\section{An Addtition to Control Statements: Switch-Statements}
+\begin{frame}[fragile]{Differentiate}
+	A common problem:
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {
+	
+	int address = 2;
+	
+	if (address == 1) {
+	System.out.println("Dear Sir,");	    
+	} else if (address == 2) {
+	System.out.println("Dear Madam,");		    
+	} else if (address == 4) {
+	System.out.println("Dear Friend,");		    
+	} else {
+	System.out.println("Dear Sir/Madam,");	
+	}
+	}
+	\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]{Differentiate with Switch}
+	How to write it using the Switch-statement:
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {
+	
+	int address = 2;
+	
+	switch(address) {
+	case 1:
+	System.out.println("Dear Sir,");
+	break;
+	case 2:
+	System.out.println("Dear Madam,");
+	break;
+	case 4:
+	System.out.println("Dear Friend,");
+	break; 
+	default:
+	System.out.println("Dear Sir/Madam,");
+	break;
+	}
+	}
+	\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]{Differentiate with Switch}
+	Depending on a variable you can switch the execution paths using the keyword \textbf{switch}.
+	This works with \texttt{int}, \texttt{char} and \texttt{String}. \\
+	\vfill
+	The variable is compared 
+	with the value following the keyword case.
+	% Strings are not compared - dot.equal
+	If they are equal the program will enter the corresponding case block.
+	If nothing fits the program will enter the default block.
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {
+	switch(intVariable) {
+	case 1:
+	doSomething();
+	break;
+	default:
+	doOtherThings();
+	break;
+	}
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Exercises}
+	\huge Hier könnten Ihre Übungsbeispiele stehen!
+\end{frame}
+
+\section{Abstract classes and methods}
 \subsection{}
 \begin{frame}[fragile]{Abstract Class}
 	The keyword \textbf{abstract} denotes an abstract class.
@@ -27,6 +104,14 @@
 	\item Abstract classes can extend other abstract classes and can implement interfaces \footnote[1]{Interfaces will be discussed later}.\\
 	\item Abstract classes can be extended by normal and abstract classes.
     \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{An Example}
+	We want to model some furniture. \\
+	\vspace{0.5cm}
+	Hence, we want some chairs, tables, \dots\ as classes which extend the furniture class (UML diagram on whiteboard)\\
+	\vspace{0.25cm}
+	We do \textbf{NOT} want an object of type furniture. In this case we label the class furniture as abstract.
 \end{frame}
 
 \begin{frame}[fragile]{Methods}
@@ -47,7 +132,7 @@
 
 \begin{frame}[fragile]{Subclasses}
 	The subclass has to implement abstract methods or has to be abstract as well.
-	All concrete methods will be regular inherited.
+	All concrete methods will be regularly inherited.
 	\begin{lstlisting}[escapechar=!]
 	public class Example extends AbstractExample {
 	    
@@ -61,16 +146,170 @@
 
 %TODO more text
 \begin{frame}{Why using Abstract?}
-	Abstract classes are used to minimize similar code in related classes.
+	\begin{itemize}
+		\item Lets you build a template for the children classes
+		\vspace{0.5cm}
+		\item Lets you add functionality classes
+		\vspace{0.5cm}
+		\item Able to avoid redundancy of code in different classes with similar functionality
+		\vspace{0.5cm}
+		\item Ability to specify default implementations of methods
+	\end{itemize}
 \end{frame}
 
-%TODO Overview
-%\begin{frame}{Abstract Class vs. Interface}
-%
-%\end{frame}
+\section{Interfaces}
+\subsection{Overview}
+\begin{frame}{Interfaces}
+	An \textbf{interface} is a well defined set of constants and methods a class have to \textbf{implement}.
+	\vfill
+	$\implies$ Makes the handling of other objects much easier
+	\vfill
+	\pause
+	For Example: A post office offers to ship letters, postcards and packages. With an interface
+	\emph{Trackable} you can collect the positions unified. 
+	It is not important how a letter calculates its position.
+	%TODO rethink the following sentence
+	It is important that the letter communicate its position through the methods from the interface.
+	%vfill
+	%conclusion: Seperation from definition and implementation. 
+	%The definition is ?denoted by? the interface.
+\end{frame}
+\subsection{Example}
+\begin{frame}[fragile]{Interface Trackable}
+	An interface contains method signatures. A signature is the definition of a method without the implementation.
+	\begin{lstlisting}
+	public interface Trackable {
+	
+	public int getStatus(int identifier);
+	
+	public Position getPosition(int identifier);
+	}
+	\end{lstlisting}
+	Note: The name of an interface often (not always) ends with the suffix \emph{-able}.
+\end{frame}
+\begin{frame}[fragile]{Letter implements Trackable}
+	\begin{lstlisting}
+	public class Letter implements Trackable {
+	
+	public Position position;
+	private int identifier;
+	
+	public int getStatus(int identifier) {
+	return this.identifier;
+	}
+	
+	public Position getPosition(int identifier) {
+	return this.position;
+	}
+	}
+	\end{lstlisting}
+	The classes \emph{Postcard} and \emph{Package} also implement the interface \emph{Trackable}.
+\end{frame}
+
+\begin{frame}[fragile]{Overview}
+	\huge Time for some UML!
+\end{frame}
+
+\begin{frame}[fragile]{Access through an Interface}
+	\begin{lstlisting}
+	public static void main(String[] args) {
+	
+	Trackable letter_1 = new Letter();
+	Trackable letter_2 = new Letter();
+	Trackable postcard_1 = new Postcard();
+	Trackable package_1 = new Package();
+	
+	letter_1.getPosition(2345);
+	postcard_1.getStatus(1234);
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Multiple Interfaces}
+\begin{frame}[fragile]{Two Interfaces}
+	A class can implement multiple interfaces.
+	\vfill
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public interface Buyable {
+	
+	// constant
+	public float tax = 1.19f;
+	
+	public float getPrice();
+	}
+	\end{lstlisting}
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public interface Trackable {
+	
+	public int getStatus(int identifier);
+	
+	public Position getPosition(int identifier);
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Postcard implements Buyable and Trackable}
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public class Postcard implements Buyable, Trackable {
+	
+	public Position position;
+	private int identifier;
+	private float priceWithoutVAT;
+	
+	public float getPrice() {
+	return priceWithoutVAT * tax;
+	}
+	
+	public int getStatus(int identifier) {
+	return this.identifier;
+	}
+	
+	public Position getPosition(int identifier) {
+	return this.position;
+	}
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Access multiple Interfaces}
+	\begin{lstlisting}
+	public static void main(String[] args) {
+	
+	Trackable postcard_T = new Postcard();
+	Postcard postcard_P = new Postcard();
+	Buyable postcard_B = new Postcard();
+	
+	postcard_T.getStatus(1234);
+	postcard_B.getPrice();
+	postcard_P.getStatus(1234);
+	postcard_P.getPrice();
+	}
+	\end{lstlisting}
+	\texttt{postcard\_P} can access both interfaces.\\
+	\texttt{postcard\_T} can access Trackable.\\
+	\texttt{postcard\_B} can access Buyable.
+\end{frame}
+%deault methods and static methods	
+
+
+\begin{frame}{Abstract Class vs. Interface}
+	\begin{tabularx}{\textheight}{l|l}
+		\textbf{Abstract class} & \textbf{Interface} \\
+		$\bullet$ Template for children classes & $\bullet$ Template for implementations \\
+		$\bullet$ Able to add functionality & $\bullet$ \textbf{NO} functionality in interface itself \\
+		$\bullet$ No multi-inheritance & $\bullet$ Sort of multi-inheritance \\
+		$\bullet$ Default implementations of methods & $\bullet$ \textbf{NO} default implementation
+	\end{tabularx}\\
+	\vspace{0.5cm}
+	The usage of both can overlap.
+\end{frame}
+
+\begin{frame}[fragile]{Exercises}
+	\huge Hier könnten Ihre Übungsbeispiele stehen!
+\end{frame}
 
 %TODO Common Errors
 %\begin{frame}{Static vs. Abstract Methods}
-%	Do not mix up statitic and abstract methods.
+%	Do not mix up static and abstract methods.
 %\end{frame}
 \end{document}

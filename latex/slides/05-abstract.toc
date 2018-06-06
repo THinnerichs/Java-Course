@@ -1,0 +1,7 @@
+\select@language {ngerman}
+\beamer@sectionintoc {1}{An Addtition to Control Statements: Switch-Statements}{3}{0}{1}
+\beamer@sectionintoc {2}{Abstract classes and methods}{7}{0}{2}
+\beamer@sectionintoc {3}{Interfaces}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overview}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Example}{14}{0}{3}
+\beamer@subsectionintoc {3}{3}{Multiple Interfaces}{18}{0}{3}

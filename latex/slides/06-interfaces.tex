@@ -15,6 +15,135 @@
 \tableofcontents
 \end{frame}
 
+\section{Interfaces}
+\subsection{Overview}
+\begin{frame}{}
+	An \textbf{interface} is a well defined set of constants and methods a class have to \textbf{implement}.
+	\vfill
+	You can access objects through their interfaces. So you can work with different kinds of objects easily.
+	\vfill
+	For Example: A post office offers to ship letters, postcards and packages. With an interface
+	\emph{Trackable} you can collect the positions unified. 
+	It is not important how a letter calculates its position.
+	%TODO rethink the following sentence
+	It is important that the letter communicate its position through the methods from the interface.
+	%vfill
+	%conclusion: Seperation from definition and implementation. 
+	%The definition is ?denoted by? the interface.
+\end{frame}
+\subsection{Example}
+\begin{frame}[fragile]{Interface Trackable}
+	An interface contains method signatures. A signature is the definition of a method without the implementation.
+	\begin{lstlisting}
+	public interface Trackable {
+	
+	public int getStatus(int identifier);
+	
+	public Position getPosition(int identifier);
+	}
+	\end{lstlisting}
+	Note: The name of an interface often ends with the suffix \emph{-able}.
+\end{frame}
+\begin{frame}[fragile]{Letter implements Trackable}
+	\begin{lstlisting}
+	public class Letter implements Trackable {
+	
+	public Position position;
+	private int identifier;
+	
+	public int getStatus(int identifier) {
+	return this.identifier;
+	}
+	
+	public Position getPosition(int identifier) {
+	return this.position;
+	}
+	}
+	\end{lstlisting}
+	The classes \emph{Postcard} and \emph{Package} also implement the interface \emph{Trackable}.
+\end{frame}
+
+\begin{frame}[fragile]{Access through an Interface}
+	\begin{lstlisting}
+	public static void main(String[] args) {
+	
+	Trackable letter_1 = new Letter();
+	Trackable letter_2 = new Letter();
+	Trackable postcard_1 = new Postcard();
+	Trackable package_1 = new Package();
+	
+	letter_1.getPosition(2345);
+	postcard_1.getStatus(1234);
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Multiple Interfaces}
+\begin{frame}[fragile]{Two Interfaces}
+	A class can implement multiple interfaces.
+	\vfill
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public interface Buyable {
+	
+	// constant
+	public float tax = 1.19f;
+	
+	public float getPrice();
+	}
+	\end{lstlisting}
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public interface Trackable {
+	
+	public int getStatus(int identifier);
+	
+	public Position getPosition(int identifier);
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Postcard implements Buyable and Trackable}
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public class Postcard implements Buyable, Trackable {
+	
+	public Position position;
+	private int identifier;
+	private float priceWithoutVAT;
+	
+	public float getPrice() {
+	return priceWithoutVAT * tax;
+	}
+	
+	public int getStatus(int identifier) {
+	return this.identifier;
+	}
+	
+	public Position getPosition(int identifier) {
+	return this.position;
+	}
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Access multiple Interfaces}
+	\begin{lstlisting}
+	public static void main(String[] args) {
+	
+	Trackable postcard_T = new Postcard();
+	Postcard postcard_P = new Postcard();
+	Buyable postcard_B = new Postcard();
+	
+	postcard_T.getStatus(1234);
+	postcard_B.getPrice();
+	postcard_P.getStatus(1234);
+	postcard_P.getPrice();
+	}
+	\end{lstlisting}
+	\texttt{postcard\_P} can access both interfaces.\\
+	\texttt{postcard\_T} can access Trackable.\\
+	\texttt{postcard\_B} can access Buyable.
+\end{frame}
+%deault methods and static methods
+
 \section{Additional Control Structure}
 \subsection{Switch}
 \begin{frame}[fragile]{Differentiate}
@@ -281,132 +410,5 @@
 %\begin{frame}{Singleton}
 %\end{frame}
 
-\section{Interfaces}
-\subsection{Overview}
-\begin{frame}{}
-	An \textbf{interface} is a well defined set of constants and methods a class have to \textbf{implement}.
-	\vfill
-	You can access objects through their interfaces. So you can work with different kinds of objects easily.
-	\vfill
-	For Example: A post office offers to ship letters, postcards and packages. With an interface
-	\emph{Trackable} you can collect the positions unified. 
-	It is not important how a letter calculates its position.
-	%TODO rethink the following sentence
-	It is important that the letter communicate its position through the methods from the interface.
-	%vfill
-	%conclusion: Seperation from definition and implementation. 
-	%The definition is ?denoted by? the interface.
-\end{frame}
-\subsection{Example}
-\begin{frame}[fragile]{Interface Trackable}
-	An interface contains method signatures. A signature is the definition of a method without the implementation.
-	\begin{lstlisting}
-	public interface Trackable {
-	
-	    public int getStatus(int identifier);
-	    
-	    public Position getPosition(int identifier);
-	}
-	\end{lstlisting}
-	Note: The name of an interface often ends with the suffix \emph{-able}.
-\end{frame}
-\begin{frame}[fragile]{Letter implements Trackable}
-	\begin{lstlisting}
-	public class Letter implements Trackable {
-	
-	    public Position position;
-	    private int identifier;
-	
-	    public int getStatus(int identifier) {
-	        return this.identifier;
-	    }
-	    
-	    public Position getPosition(int identifier) {
-	        return this.position;
-	    }
-	}
-	\end{lstlisting}
-	The classes \emph{Postcard} and \emph{Package} also implement the interface \emph{Trackable}.
-\end{frame}
 
-\begin{frame}[fragile]{Access through an Interface}
-	\begin{lstlisting}
-	public static void main(String[] args) {
-	
-	    Trackable letter_1 = new Letter();
-	    Trackable letter_2 = new Letter();
-	    Trackable postcard_1 = new Postcard();
-	    Trackable package_1 = new Package();
-	    
-	    letter_1.getPosition(2345);
-	    postcard_1.getStatus(1234);
-	}
-	\end{lstlisting}
-\end{frame}
-
-\subsection{Multiple Interfaces}
-\begin{frame}[fragile]{Two Interfaces}
-	A class can implement multiple interfaces.
-	\vfill
-	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
-	public interface Buyable {
-	
-	    // constant
-	    public float tax = 1.19f;
-	
-	    public float getPrice();
-	}
-	\end{lstlisting}
-	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
-	public interface Trackable {
-	
-	    public int getStatus(int identifier);
-	    
-	    public Position getPosition(int identifier);
-	}
-	\end{lstlisting}
-\end{frame}
-
-\begin{frame}[fragile]{Postcard implements Buyable and Trackable}
-	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
-	public class Postcard implements Buyable, Trackable {
-	
-	    public Position position;
-	    private int identifier;
-	    private float priceWithoutVAT;
-	    
-	    public float getPrice() {
-	        return priceWithoutVAT * tax;
-	    }
-	
-	    public int getStatus(int identifier) {
-	        return this.identifier;
-	    }
-	    
-	    public Position getPosition(int identifier) {
-	        return this.position;
-	    }
-	}
-	\end{lstlisting}
-\end{frame}
-
-\begin{frame}[fragile]{Access multiple Interfaces}
-	\begin{lstlisting}
-	public static void main(String[] args) {
-	
-	    Trackable postcard_T = new Postcard();
-	    Postcard postcard_P = new Postcard();
-	    Buyable postcard_B = new Postcard();
-
-	    postcard_T.getStatus(1234);
-	    postcard_B.getPrice();
-	    postcard_P.getStatus(1234);
-	    postcard_P.getPrice();
-	}
-	\end{lstlisting}
-	\texttt{postcard\_P} can access both interfaces.\\
-	\texttt{postcard\_T} can access Trackable.\\
-	\texttt{postcard\_B} can access Buyable.
-\end{frame}
-%deault methods and static methods
 \end{document}

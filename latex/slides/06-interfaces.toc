@@ -1,0 +1,13 @@
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Interfaces}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Overview}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Example}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Multiple Interfaces}{7}{0}{1}
+\beamer@sectionintoc {2}{Additional Control Structure}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Switch}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Break \& Continue}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{return}{16}{0}{2}
+\beamer@sectionintoc {3}{Static}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overview}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{Examples}{20}{0}{3}
+\beamer@subsectionintoc {3}{3}{Implications}{23}{0}{3}

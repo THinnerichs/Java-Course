@@ -1,0 +1,13 @@
+\frametitle{Static is an One-Way}
+Methods from objects can:
+	\begin{itemize}
+		\item access attributes (object variables)
+		\item access class variables
+		\item call methods
+		\item call static methods
+	\end{itemize}
+	Class methods can:
+	\begin{itemize}
+		\item access class variables
+		\item call static methods
+	\end{itemize}
