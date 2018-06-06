@@ -1,4 +1,4 @@
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \beamer@sectionintoc {1}{An Addtition to Control Statements: Switch-Statements}{3}{0}{1}
 \beamer@sectionintoc {2}{Abstract classes and methods}{7}{0}{2}
 \beamer@sectionintoc {3}{Interfaces}{12}{0}{3}

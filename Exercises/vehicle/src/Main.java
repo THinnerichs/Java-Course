@@ -7,5 +7,14 @@ public class Main {
         vehicle.speedUp();
         vehicle.Breake();
         vehicle.Leave();
+
+        String test = "Datum";
+        switch (test) {
+            case "Datum": test = "19.2";
+                break;
+            default:
+                test = "2";
+        }
+        System.out.println(test);
     }
 }
