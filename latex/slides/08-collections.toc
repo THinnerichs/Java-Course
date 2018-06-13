@@ -1,4 +1,4 @@
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \beamer@sectionintoc {1}{Generics}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{What is a generic}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Wrapper Classes}{9}{0}{1}

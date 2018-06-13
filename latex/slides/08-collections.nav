@@ -2,10 +2,11 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\sectionentry {1}{Generics}{3}{Generics}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{What is a generic}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\sectionentry {1}{Generics}{3}{Generics}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{What is a generic}}
 \headcommand {\slideentry {1}{1}{1}{3/3}{What is a generic}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{1}{2}{4/4}{What is a generic}{0}}
@@ -18,20 +19,23 @@
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\slideentry {1}{1}{6}{8/8}{What is a generic}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Wrapper Classes}}\headcommand {\beamer@subsectionpages {3}{8}}
+\headcommand {\beamer@subsectionpages {3}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Wrapper Classes}}
 \headcommand {\slideentry {1}{2}{1}{9/10}{Wrapper Classes}{0}}
 \headcommand {\beamer@framepages {9}{10}}
 \headcommand {\slideentry {1}{2}{2}{11/11}{Wrapper Classes}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\sectionentry {2}{Collections}{12}{Collections}{0}}
 \headcommand {\beamer@sectionpages {3}{11}}
 \headcommand {\beamer@subsectionpages {9}{11}}
+\headcommand {\sectionentry {2}{Collections}{12}{Collections}{0}}
 \headcommand {\slideentry {2}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Overview}}\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Overview}}
 \headcommand {\slideentry {2}{1}{1}{13/14}{Overview}{0}}
 \headcommand {\beamer@framepages {13}{14}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Set and List}}\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Set and List}}
 \headcommand {\slideentry {2}{2}{1}{15/15}{Set and List}{0}}
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\slideentry {2}{2}{2}{16/16}{Set and List}{0}}
@@ -40,14 +44,16 @@
 \headcommand {\beamer@framepages {17}{18}}
 \headcommand {\slideentry {2}{2}{4}{19/19}{Set and List}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{20}{Iterating}}\headcommand {\beamer@subsectionpages {15}{19}}
+\headcommand {\beamer@subsectionpages {15}{19}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{20}{Iterating}}
 \headcommand {\slideentry {2}{3}{1}{20/20}{Iterating}{0}}
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {2}{3}{2}{21/21}{Iterating}{0}}
 \headcommand {\beamer@framepages {21}{21}}
 \headcommand {\slideentry {2}{3}{3}{22/22}{Iterating}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{23}{Map}}\headcommand {\beamer@subsectionpages {20}{22}}
+\headcommand {\beamer@subsectionpages {20}{22}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{23}{Map}}
 \headcommand {\slideentry {2}{4}{1}{23/23}{Map}{0}}
 \headcommand {\beamer@framepages {23}{23}}
 \headcommand {\slideentry {2}{4}{2}{24/24}{Map}{0}}
@@ -66,4 +72,4 @@
 \headcommand {\beamer@subsectionpages {23}{29}}
 \headcommand {\beamer@sectionpages {12}{29}}
 \headcommand {\beamer@documentpages {29}}
-\headcommand {\def \inserttotalframenumber {26}}
+\headcommand {\gdef \inserttotalframenumber {26}}
