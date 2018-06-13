@@ -1,0 +1,5 @@
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Exceptions}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Overview}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Catching Exceptions}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Throwing Exceptions}{12}{0}{1}

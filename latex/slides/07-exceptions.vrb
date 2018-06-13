@@ -1,0 +1,14 @@
+\frametitle{Creating new Exceptions - Test}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main(String[] args) {
+
+	    int a = 0;
+	    try {
+	        a = Calc.divide(7, 0);
+	    } catch (DivisionByZeroException e) {
+	        System.out.println("Division by zero.");
+	        e.printStackTrace();
+	    }
+	}
+	\end{lstlisting}
+	\emph{DivisionByZeroException} is checked and therefore has to be handled.

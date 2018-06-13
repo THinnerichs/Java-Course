@@ -1,0 +1,9 @@
+\frametitle{Maps and For Each}
+You can interate through the entry set of a map (available before Java 1.8)
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+      Map<String, String> map = ...
+      for (Map.Entry<String, String> entry : map.entrySet()) {
+        System.out.println("Key: " + entry.getKey() +
+        ", value" + entry.getValue());
+      }
+	\end{lstlisting}
