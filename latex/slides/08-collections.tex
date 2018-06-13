@@ -5,6 +5,8 @@
 \subtitle{Collections}
 \date{\today}
 
+\usepackage{color}
+
 \begin{document}
 
 \begin{frame}
@@ -59,10 +61,34 @@
 		    public T get() { return t; }
 		}
 		
-		Box<Integer> integerBox; = new Box<Integer>();
+		Box<Integer> integerBox = new Box<Integer>();
 
 	\end{lstlisting}
 \end{frame}
+
+\begin{frame}[fragile]{Another example}
+	\begin{lstlisting}
+		public class Pair<T> {
+			private T first;
+			private T second;
+			
+			public T getFirst() {return first;}
+			public T getSecond() {return second;}
+		}
+		public class Pairs<S,T>{
+			private Pair<S> firstPair;
+			private Pair<T> secondPair;
+			
+			public Pair<T> getFirst() {return firstPair;}
+			public <U,V> getSecond(Pair<U> u, Pair<V> v){...}
+		}
+		
+		Pair<Integer> intPair = new Pair<Integer>();
+		Pair<Pair<Integer>> pairOfPairs = new Pair<Pair<Integer>>();
+	\end{lstlisting}
+	Mostly used in Collections (e.g. Sets, Maps of a certain type)
+\end{frame}
+
 
 \subsection{Wrapper Classes}
 
@@ -81,17 +107,30 @@
 			short & Short
 		\end{tabular}
 	\end{center}
+	\pause
+	\huge Any questions?
+\end{frame}
+
+\begin{frame}[fragile]{Exercise}
+	\huge Hier könnte Ihre Aufgabe stehen!
 \end{frame}
 
 \section{Collections}
+\begin{frame}
+	\huge Collections
+\end{frame}
+
 \subsection{Overview}
 \begin{frame}{Collections Framework}
 	Java offers various data structures like \textbf{Sets}, \textbf{Lists} and \textbf{Maps}.
 	Those structures are part of the collections framework.
-
-	There are interfaces to access the data structures in an easy way.
-	There are multiple implementations for various needs.
-	Alternatively you can use your own implementations.
+	\pause
+	\begin{itemize}
+		\item There are interfaces to access the data structures in an easy way
+		\item There are multiple implementations for various needs
+		\item Alternatively you can use your own implementations
+	\end{itemize}
+	
 \end{frame}
 
 \subsection{Set and List}
@@ -114,6 +153,7 @@
 	    }
 	}
 	\end{lstlisting}
+	\textcolor{red}{Another UML diagram might be helpful right here.}\\
 	In the following examples \texttt{import java.util.*;} will be omitted.
 \end{frame}
 
@@ -135,6 +175,14 @@
 	    System.out.println(list); // prints: [foo, bar, foo]
 	}
 	\end{lstlisting}
+	\textcolor{red}{Another UML diagram might be helpful right here.}\\
+\end{frame}
+
+\begin{frame}[fragile]{How to find all these methods and hierarchies?}
+	Let's have a look at the official Java website! \\
+	https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html\\
+	\pause
+	\includegraphics[width=\textwidth]{class-and-interface-hierarchy.png}
 \end{frame}
 	
 \begin{frame}[fragile]{List Methods}
@@ -309,15 +357,6 @@
 	\end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile]{Maps and Lambda}
-	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
-		map.forEach((k,v) -> {
-			//Key and Value
-			System.out.println("Key: " + k + ", value: " v);
-		})
-	\end{lstlisting}
-\end{frame}
-
 \begin{frame}[fragile]{Maps and For Each}
   You can interate through the entry set of a map (available before Java 1.8)
 	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
@@ -332,20 +371,24 @@
 \begin{frame}{Overview}
 	\begin{center}
 		\begin{tabular}{ l | l }
-			List & Keeps order of objects \\
-				 & Easily traversible \\
-				 & Search not effective \\
+			List & $ \bullet $ Keeps order of objects \\
+				 & $ \bullet $ Easily traversible \\
+				 & $ \bullet $ Search not effective \\
 			\hline
-			Set  & No duplicates \\
-				 & No order - still traversible \\
-				 & Effective searching \\
+			Set  & $ \bullet $ No duplicates \\
+				 & $ \bullet $ No order - still traversible \\
+				 & $ \bullet $ Effective searching \\
 			\hline
-			Map  & Key-Value storage \\
-				 & Search super-effective \\
-				 & Traversing difficult
+			Map  & $ \bullet $ Key-Value storage \\
+				 & $ \bullet $ Search super-effective \\
+				 & $ \bullet $ Traversing difficult
 			
 		\end{tabular}
 	\end{center}
+\end{frame}
+
+\begin{frame}{Exercise}
+	\huge Hier könnte Ihre Collection Aufgabe stehen!
 \end{frame}
 
 \end{document}
