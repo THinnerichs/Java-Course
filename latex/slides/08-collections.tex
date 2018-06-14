@@ -20,23 +20,11 @@
 \section{Generics}
 \subsection{What is a generic}
 \begin{frame}[fragile]{Generics}
-	\begin{lstlisting}
-		Object myStringAsObject = "klaus";
-		String myStringAsString = (String) myStringAsObject;
-	\end{lstlisting}
-\end{frame}
-
-\begin{frame}[fragile]{Generics}
-	\begin{lstlisting}
-		Object myStringAsObject = Integer.valueOf("42");
-		String myStringAsString = (String) myStringAsObject;
-	\end{lstlisting}
-\end{frame}
-
-\begin{frame}[fragile]{Why it won't work:}
-		Integer can't be casted to String.
-		
-		The Code before will compile but still cause an Exception in the JVM.
+	Imagine the following:\\
+	\vspace{0.5cm}
+	\begin{quotation}
+		We want to build a box class that will contain objects, but only of a type given as we call the constructor. Afterwards it should not take objects of another type. We would like to put \emph{anything} in there.
+	\end{quotation}
 \end{frame}
 
 \begin{frame}[fragile]{Generics}

@@ -1,9 +1,9 @@
-\babel@toc {ngerman}{}
+\select@language {ngerman}
 \beamer@sectionintoc {1}{Generics}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{What is a generic}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Wrapper Classes}{9}{0}{1}
-\beamer@sectionintoc {2}{Collections}{12}{0}{2}
-\beamer@subsectionintoc {2}{1}{Overview}{13}{0}{2}
-\beamer@subsectionintoc {2}{2}{Set and List}{15}{0}{2}
-\beamer@subsectionintoc {2}{3}{Iterating}{20}{0}{2}
-\beamer@subsectionintoc {2}{4}{Map}{23}{0}{2}
+\beamer@subsectionintoc {1}{2}{Wrapper Classes}{7}{0}{1}
+\beamer@sectionintoc {2}{Collections}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Overview}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Set and List}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Iterating}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Map}{21}{0}{2}
