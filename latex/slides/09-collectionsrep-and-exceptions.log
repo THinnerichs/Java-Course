@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  20 JUN 2018 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  20 JUN 2018 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,14 +1307,15 @@ Overfull \hbox (25.66641pt too wide) in paragraph at lines 79--79
 
 ] [7
 
-] [8
-
-] [9
-
 ]
 \openout4 = `09-collectionsrep-and-exceptions.vrb'.
 
- (./09-collectionsrep-and-exceptions.vrb) [10
+ (./09-collectionsrep-and-exceptions.vrb) [8
+
+]
+(./09-collectionsrep-and-exceptions.vrb) [9
+
+] [10
 
 ]
 \openout4 = `09-collectionsrep-and-exceptions.vrb'.
@@ -1322,11 +1323,7 @@ Overfull \hbox (25.66641pt too wide) in paragraph at lines 79--79
 
 (./09-collectionsrep-and-exceptions.vrb) [11
 
-]
-\openout4 = `09-collectionsrep-and-exceptions.vrb'.
-
-
-(./09-collectionsrep-and-exceptions.vrb) [12
+] [12
 
 ]
 \openout4 = `09-collectionsrep-and-exceptions.vrb'.
@@ -1340,9 +1337,27 @@ Overfull \hbox (25.66641pt too wide) in paragraph at lines 79--79
 
 (./09-collectionsrep-and-exceptions.vrb) [14
 
-] [15
+]
+\openout4 = `09-collectionsrep-and-exceptions.vrb'.
 
-] [16
+
+(./09-collectionsrep-and-exceptions.vrb) [15
+
+]
+\openout4 = `09-collectionsrep-and-exceptions.vrb'.
+
+
+(./09-collectionsrep-and-exceptions.vrb) [16
+
+]
+\openout4 = `09-collectionsrep-and-exceptions.vrb'.
+
+
+(./09-collectionsrep-and-exceptions.vrb) [17
+
+] [18
+
+] [19
 
 ]
 \tf@nav=\write6
@@ -1354,15 +1369,15 @@ Overfull \hbox (25.66641pt too wide) in paragraph at lines 79--79
 \tf@snm=\write8
 \openout8 = `09-collectionsrep-and-exceptions.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
 
 (./09-collectionsrep-and-exceptions.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `09-collectionsrep-and-exceptions.out' has no
 t changed.
-(rerunfilecheck)             Checksum: A0F5DAEBBA01C6581153FEA5C2BEE1F7;98.
+(rerunfilecheck)             Checksum: 42B369F049FEEF6BE79FB0932E650ECF;98.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1370,13 +1385,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19710 strings out of 494893
- 361038 string characters out of 6178672
+ 19719 strings out of 494893
+ 360837 string characters out of 6178672
  604325 words of memory out of 5000000
- 22520 multiletter control sequences out of 15000+600000
- 8739 words of font info for 33 fonts, out of 8000000 for 9000
+ 22517 multiletter control sequences out of 15000+600000
+ 9207 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,17n,62p,860b,1257s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,17n,60p,860b,1246s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
@@ -1386,11 +1401,11 @@ t/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt8.pfb>
-Output written on 09-collectionsrep-and-exceptions.pdf (16 pages, 160801 bytes)
+Output written on 09-collectionsrep-and-exceptions.pdf (19 pages, 169617 bytes)
 .
 PDF statistics:
- 536 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 41 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 

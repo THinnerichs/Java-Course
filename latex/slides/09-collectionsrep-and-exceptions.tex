@@ -92,9 +92,26 @@
 		\hline
 		Second main function (With data types)&\\
 		\hline
+		Third main function (With data type)&\\
+		\hline
 		How to get from collection?&\\
 		
 	\end{tabular}
+\end{frame}
+
+\begin{frame}[fragile]{How to iterate over sets and lists}
+	\pause
+	\begin{lstlisting}
+		Set<T> mySet = new HashSet<T>();
+		foreach(T item:mySet){
+			item.doSomething();
+		}
+		
+		List<T> myList = new ArrayList<T>();
+		foreach(T item:myList){
+		item.doSomething();
+		}
+	\end{lstlisting}
 \end{frame}
 
 \begin{frame}{Another quiz!}
@@ -111,9 +128,23 @@
 		\hline
 		Second main function (With data types)&T iter.next()\\
 		\hline
+		Third main function (With data type)&T iter.remove()\\
+		\hline
 		How to get from collection(e.g. set)?&set.iterator()\\
 		
 	\end{tabular}
+\end{frame}
+
+\begin{frame}[fragile]{How to iterate over sets and lists using iterators}
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	Set<T> mySet = new HashSet<T>();
+	Iterator<T> myIter = mySet.iterator();
+	
+	while(myIter.hasNext()){
+		T item = myIter.next();
+		item.doSomething();
+	}
+	\end{lstlisting}
 \end{frame}
 
 \begin{frame}{Exercise}
