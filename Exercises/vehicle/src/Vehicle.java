@@ -85,4 +85,23 @@ public class Vehicle {
     public int getWeight() {
         return weight;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if(o == this) {
+            return true;
+        }
+        if(!(o instanceof Vehicle)) {
+            return false;
+        }
+        Vehicle vo = (Vehicle)o;
+
+        return vo.weight == weight;
+    }
+
+    @Override
+    public int hashCode() {
+        return ((Integer)weight).hashCode();
+    }
 }
