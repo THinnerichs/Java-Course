@@ -1,0 +1,245 @@
+\input{../templates/course_definitions}
+\input{../templates/course_information}
+
+\title{Java}
+\subtitle{Collections part 2}
+\date{\today}
+
+\usepackage{color}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+\section{Repetition}
+\begin{frame}{Repetition}
+	What we learned last time:
+	\begin{itemize}
+		\item How to use generics
+		\item How to handle Javas lists, sets and iterators
+	\end{itemize}
+	What we will try to achieve today:
+	\begin{itemize}
+		\item How to use iterators on sets and lists
+		\item How to use maps and what to with them
+		\item What exceptions are and how to handle them
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{A quiz!}
+	\begin{tabular}{c|c|c}
+		&Set&List\\
+		\hline
+		\pause
+		Same item twice in it? &&\\
+		\hline
+		Ordered?&&\\
+		\hline
+		Iterable?&&\\
+		\hline
+		What package to import &&\\
+		\hline
+		Declaring set type (variable type)&&\\
+		\hline
+		Building an instance (example)&&\\
+		\hline
+		Add an item&&\\
+		\hline
+		Removing an item&&\\
+		
+	\end{tabular}
+\end{frame}
+
+\begin{frame}{A quiz!}
+	\begin{tabular}{c|c|c}
+		&Set&List\\
+		\hline
+		Same item twice in it? &No!&Yes!\\
+		\hline
+		Ordered?&No!&Yes!\\
+		\hline
+		Iterable?&Yes!&Also yes!\\
+		\hline
+		What package to import &import java.util.*&import java.util.*\\
+		\hline
+		Declaring set type (variable type)&Set$<$T$>$ set&List$<$T$> $list\\
+		\hline
+		Building an instance (example)&= new HashSet$<$T$>$()& = new ArrayList$<$T$>$()\\
+		\hline
+		Add an item&set.add(item)&list.add(item)\\
+		\hline
+		Removing an item&set.remove(item)&list.remove(item)\\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}{Another quiz!}
+	The iterator:\\
+	\vspace{1cm}
+	\begin{tabular}{l|l}
+		&Iterator\\
+		\hline
+		How to declare&\\
+		\hline
+		How to build an instance&\\
+		\hline
+		First main function (With data type)&\\
+		\hline
+		Second main function (With data types)&\\
+		\hline
+		How to get from collection?&\\
+		
+	\end{tabular}
+\end{frame}
+
+\begin{frame}{Another quiz!}
+	The iterator:\\
+	\vspace{1cm}
+	\begin{tabular}{l|l}
+		&Iterator\\
+		\hline
+		How to declare&Iterator$<$T$>$ iter\\
+		\hline
+		How to build an instance&= new Iterator$<$T$>$()\\
+		\hline
+		First main function (With data type)&boolean iter.hasNext()\\
+		\hline
+		Second main function (With data types)&T iter.next()\\
+		\hline
+		How to get from collection(e.g. set)?&set.iterator()\\
+		
+	\end{tabular}
+\end{frame}
+
+\begin{frame}{Exercise}
+	\begin{itemize}
+		\item Create an array with 10 elements. Create a list and fill the list with the array 		elments. Create a set and fill the set with the list elments and create a map with the set elments as values and the index as key.
+		\item Extend our vending machine with an internal storage
+	\end{itemize}
+\end{frame}
+
+\section{Maps and iterators}
+\begin{frame}[fragile]{Map}
+	The interface \emph{Map} is not a subinterface of \emph{Collection}.\\
+	A map contains pairs of key and value. Each key refers to a value. 
+	Two keys can refer to the same value. There are not two equal keys in one map.
+	\emph{Map} is part of the package \texttt{java.util}.
+	\vfill
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {
+	
+	Map<Integer, String> map = 
+	new HashMap<Integer, String>();
+	
+	map.put(23, "foo");
+	map.put(28, "foo");
+	map.put(31, "bar");
+	map.put(23, "bar"); // "bar" replaces "foo" for key = 23
+	
+	System.out.println(map);
+	// prints: {23=bar, 28=foo, 31=bar}
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Key, Set and Values}
+	You can get the set of keys from the map.
+	Because one value can exist multiple times a collection is used for the values.
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {
+	
+	// [...] map like previous slide
+	
+	Set<Integer> keys = map.keySet();
+	Collection<String> values = map.values();
+	
+	System.out.println(keys);
+	// prints: [23, 28, 31]
+	
+	System.out.println(values);
+	// prints: [bar, foo, bar]
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Iterator}
+	To iterate over a map use the iterator from the set of keys.
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {
+	
+	// [...] map, keys, values like previous slide    	    
+	Iterator<Integer> iter = keys.iterator();
+	
+	while(iter.hasNext()) {
+	System.out.print(map.get(iter.next()) + " ");
+	} // prints: bar foo bar
+	
+	System.out.println(); // print a line break
+	
+	for(Integer i: keys) {
+	System.out.print(map.get(i) + " ");
+	} // prints: bar foo bar
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Nested Maps}
+	Nested maps offer storage with key pairs.
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	public static void main (String[] args) {		
+	
+	Map<String, Map<Integer, String>> addresses = 
+	new HashMap<String, Map<Integer, String>>();
+	
+	addresses.put("Noethnitzer Str.", 
+	new HashMap<Integer, String>());
+	
+	addresses.get("Noethnitzer Str.").
+	put(46, "Andreas-Pfitzmann-Bau");
+	addresses.get("Noethnitzer Str.").
+	put(44, "Fraunhofer IWU");
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Maps and For Each}
+	You can interate through the entry set of a map (available before Java 1.8)
+	\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+	Map<String, String> map = ...
+	for (Map.Entry<String, String> entry : map.entrySet()) {
+	System.out.println("Key: " + entry.getKey() +
+	", value" + entry.getValue());
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Overview}
+	\begin{center}
+		\begin{tabular}{ l | l }
+			List & $ \bullet $ Keeps order of objects \\
+			& $ \bullet $ Easily traversible \\
+			& $ \bullet $ Search not effective \\
+			\hline
+			Set  & $ \bullet $ No duplicates \\
+			& $ \bullet $ No order - still traversible \\
+			& $ \bullet $ Effective searching \\
+			\hline
+			Map  & $ \bullet $ Key-Value storage \\
+			& $ \bullet $ Search super-effective \\
+			& $ \bullet $ Traversing difficult
+			
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Easy and some more complex exercises}
+	\huge Hier könnten Ihre Aufgaben zu Mpas und Iteratoren stehen!
+\end{frame}
+
+
+\end{document}
