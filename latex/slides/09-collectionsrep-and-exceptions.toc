@@ -1,3 +1,7 @@
-\babel@toc {ngerman}{}
+\select@language {ngerman}
 \beamer@sectionintoc {1}{Repetition}{3}{0}{1}
 \beamer@sectionintoc {2}{Maps and iterators}{13}{0}{2}
+\beamer@sectionintoc {3}{Exceptions}{20}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overview}{20}{0}{3}
+\beamer@subsectionintoc {3}{2}{Catching Exceptions}{24}{0}{3}
+\beamer@subsectionintoc {3}{3}{Throwing Exceptions}{29}{0}{3}

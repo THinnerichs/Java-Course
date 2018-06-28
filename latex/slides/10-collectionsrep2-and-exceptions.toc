@@ -1,0 +1,6 @@
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Repetition}{3}{0}{1}
+\beamer@sectionintoc {2}{Exceptions}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Overview}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Catching Exceptions}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Throwing Exceptions}{22}{0}{2}

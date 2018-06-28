@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  20 JUN 2018 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  28 JUN 2018 08:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1505,7 +1505,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  20092 strings out of 494893
  365270 string characters out of 6178672
- 623325 words of memory out of 5000000
+ 623324 words of memory out of 5000000
  22871 multiletter control sequences out of 15000+600000
  12617 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1517,7 +1517,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on 07-exceptions.pdf (17 pages, 158444 bytes).
+Output written on 07-exceptions.pdf (17 pages, 158452 bytes).
 PDF statistics:
  579 PDF objects out of 1000 (max. 8388607)
  531 compressed objects within 6 object streams
