@@ -77,8 +77,8 @@
 		Iterator<T> iter = keys.iterator();
 		
 		while(iter.hasNext()) {
-			T item = iter.next();
-			item.doSth();
+			S key = iter.next();
+			key.doSth();
 			...
 		}
 	\end{lstlisting}
@@ -87,8 +87,8 @@
 	Possibility 2:
 	\pause
 	\begin{lstlisting}
-		for(T item:keys) {
-			item.doSth();
+		for(S key:keys) {
+			key.doSth();
 			...
 		}
 	\end{lstlisting}
@@ -366,28 +366,28 @@
 \end{frame}
 
 \begin{frame}{Exercise}
-\begin{itemize}
-	Create a basic authentificaion system with users who can register, login, logout and change user informations.
-	Requirements: username, password, email,... (password=min 6 letters, username= 4  - 10 letters)
-	Each invalid input will result in an exception.
-\end{itemize}
+	\begin{itemize}
+		\item Create a basic authentificaion system with users who can register, login, logout and change user informations.
+		Requirements: username, password, email,... (password=min 6 letters, username= 4  - 10 letters)
+		Each invalid input will result in an exception.
+	\end{itemize}
 \end{frame}
+
 \begin{frame}{Exercise}
-\begin{itemize}
-	Create a three dimensional warehouse with crates. Each crate will be stored at x=? y=? and z=? coordinates and 
-	each user should be able to auto store crates or to manually place them. Crates can't float. Every invalid state will throw an exception.
-	The system is able to find free spots and find/remove stored crates. It is capable to work with different sizes.
-\end{itemize}
-\end{frame}
-\begin{frame}{Exercise}
-\begin{itemize}
-	Combine both systems. Our warehouse systems consists of employees with user accounts and a storage.
-	Only authenticated employees will be able to interact with the system.
-	Every employee will be an user with some extra attributes like loan, years spent and so on.
-	Throw an exception when invalid actions appear.
+	\begin{itemize}
+		\item Create a three dimensional warehouse with crates. Each crate will be stored at x=? y=? and z=? coordinates and 
+		each user should be able to auto store crates or to manually place them. Crates can't float. Every invalid state will throw an exception.
+		The system is able to find free spots and find/remove stored crates. It is capable to work with different sizes.
 \end{itemize}
 \end{frame}
 
-
+\begin{frame}{Exercise}
+	\begin{itemize}
+		\item Combine both systems. Our warehouse systems consists of employees with user accounts and a storage.
+		Only authenticated employees will be able to interact with the system.
+		Every employee will be an user with some extra attributes like loan, years spent and so on.
+		Throw an exception when invalid actions appear.
+	\end{itemize}
+\end{frame}
 
 \end{document}

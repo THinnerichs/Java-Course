@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.5.17)  28 JUN 2018 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  28 JUN 2018 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **10-collectionsrep2-and-exceptions.tex
 (./10-collectionsrep2-and-exceptions.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
 (../templates/course_definitions.tex
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2017/01/22 v3.40 A class for typesetting presentations
@@ -1513,50 +1513,11 @@ thkerncmss.
 
 (./10-collectionsrep2-and-exceptions.vrb) [27
 
-]
+] [28
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+] [29
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.374 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[28
-
-]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.381 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[29
-
-]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.389 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[30
+] [30
 
 ]
 \tf@nav=\write6
@@ -1570,7 +1531,8 @@ If that doesn't work, type  X <return>  to quit.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
- (./10-collectionsrep2-and-exceptions.aux)
+
+(./10-collectionsrep2-and-exceptions.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
 Package rerunfilecheck Info: File `10-collectionsrep2-and-exceptions.out' has n
@@ -1583,12 +1545,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20184 strings out of 493013
- 367646 string characters out of 6135682
- 590944 words of memory out of 5000000
- 23160 multiletter control sequences out of 15000+600000
+ 20191 strings out of 494893
+ 367699 string characters out of 6178672
+ 586325 words of memory out of 5000000
+ 22934 multiletter control sequences out of 15000+600000
  13091 words of font info for 49 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  58i,17n,62p,861b,1249s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
@@ -1600,7 +1562,7 @@ nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt8.pfb>
-Output written on 10-collectionsrep2-and-exceptions.pdf (30 pages, 214814 bytes
+Output written on 10-collectionsrep2-and-exceptions.pdf (30 pages, 215046 bytes
 ).
 PDF statistics:
  961 PDF objects out of 1000 (max. 8388607)
