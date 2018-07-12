@@ -1,0 +1,18 @@
+\frametitle{Testing to throw exceptions}
+\begin{lstlisting}
+		public class BookTest{
+			private Book book;
+			private Author author
+
+			@Before
+			public void setUp(){
+				autor = new Author("Douglas Adams");
+				book = new Book(douglas);
+			}
+
+			@Test (expected = InvalidArgumentException.class)
+			public void turnOverTest(){
+				book.turnOver(-5);
+			}
+		}
+	\end{lstlisting}

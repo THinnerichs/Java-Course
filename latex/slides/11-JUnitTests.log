@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  5 JUL 2018 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.29)  12 JUL 2018 08:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**10-collectionsrep2-and-exceptions.tex
-(./10-collectionsrep2-and-exceptions.tex
+**11-JUnitTests.tex
+(./11-JUnitTests.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
 (../templates/course_definitions.tex
@@ -1198,8 +1198,8 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \qroofy=\count176
 \@qrscratchbox=\box103
 )
-(./10-collectionsrep2-and-exceptions.aux)
-\openout1 = `10-collectionsrep2-and-exceptions.aux'.
+(./11-JUnitTests.aux)
+\openout1 = `11-JUnitTests.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -1296,10 +1296,9 @@ LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
 
-(./10-collectionsrep2-and-exceptions.out)
-(./10-collectionsrep2-and-exceptions.out)
+(./11-JUnitTests.out) (./11-JUnitTests.out)
 \@outlinefile=\write5
-\openout5 = `10-collectionsrep2-and-exceptions.out'.
+\openout5 = `11-JUnitTests.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 12.
@@ -1381,8 +1380,8 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 12.
 \c@lstlisting=\count184
 
-(./10-collectionsrep2-and-exceptions.nav)
-<../templates/fsr_logo_cropped.pdf, id=40, 547.64598pt x 413.545pt>
+(./11-JUnitTests.nav)
+<../templates/fsr_logo_cropped.pdf, id=36, 547.64598pt x 413.545pt>
 File: ../templates/fsr_logo_cropped.pdf Graphic file (type pdf)
 
 <use ../templates/fsr_logo_cropped.pdf>
@@ -1397,147 +1396,98 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../templates/fsr_logo_crop
-ped.pdf>] (./10-collectionsrep2-and-exceptions.toc) [2
-
-] [3
+ped.pdf>] (./11-JUnitTests.toc) [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+\openout4 = `11-JUnitTests.vrb'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (./11-JUnitTests.vrb) [3
+
+]
+\openout4 = `11-JUnitTests.vrb'.
+
+
+(./11-JUnitTests.vrb)
+Overfull \vbox (4.76929pt too high) detected at line 72
+ []
+
+[4
+
+] [5
+
+] [6
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 47.
+line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[4
+Overfull \hbox (167.99951pt too wide) in paragraph at lines 89--89
+[][]  
+ []
 
-] [5
+[7
 
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
- (./10-collectionsrep2-and-exceptions.vrb) [6
-
-]
-(./10-collectionsrep2-and-exceptions.vrb) [7
+] [8
 
 ]
-(./10-collectionsrep2-and-exceptions.vrb) [8
+Overfull \hbox (7.77727pt too wide) in paragraph at lines 114--114
+[][]  
+ []
+
+[9
 
 ]
-(./10-collectionsrep2-and-exceptions.vrb) [9
+Overfull \hbox (12.61067pt too wide) in paragraph at lines 126--126
+[][]  
+ []
 
-] [10
-
-] [11
-
-] [12
-
-] [13
-
-] [14
-
-] [15
+[10
 
 ]
-[16
+\openout4 = `11-JUnitTests.vrb'.
+
+ (./11-JUnitTests.vrb) [11
 
 ]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
+\openout4 = `11-JUnitTests.vrb'.
 
- (./10-collectionsrep2-and-exceptions.vrb) [17
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [18
+ (./11-JUnitTests.vrb) [12
 
 ]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
+\openout4 = `11-JUnitTests.vrb'.
 
-
-(./10-collectionsrep2-and-exceptions.vrb) [19
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [20
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [21
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [22
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [23
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [24
-
-] [25
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [26
-
-]
-\openout4 = `10-collectionsrep2-and-exceptions.vrb'.
-
-
-(./10-collectionsrep2-and-exceptions.vrb) [27
-
-] [28
-
-] [29
-
-] [30
+ (./11-JUnitTests.vrb) [13
 
 ]
 \tf@nav=\write6
-\openout6 = `10-collectionsrep2-and-exceptions.nav'.
+\openout6 = `11-JUnitTests.nav'.
 
 \tf@toc=\write7
-\openout7 = `10-collectionsrep2-and-exceptions.toc'.
+\openout7 = `11-JUnitTests.toc'.
 
 \tf@snm=\write8
-\openout8 = `10-collectionsrep2-and-exceptions.snm'.
+\openout8 = `11-JUnitTests.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
-
-(./10-collectionsrep2-and-exceptions.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
-Package rerunfilecheck Info: File `10-collectionsrep2-and-exceptions.out' has n
-ot changed.
-(rerunfilecheck)             Checksum: 9C019B75C29DBC467C78391CEBCD1DB3;286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+ (./11-JUnitTests.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package rerunfilecheck Info: File `11-JUnitTests.out' has not changed.
+(rerunfilecheck)             Checksum: 3F875AF6F27ED8DCFFF582C1A661E693;273.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1545,28 +1495,22 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20191 strings out of 494893
- 367699 string characters out of 6178672
- 586325 words of memory out of 5000000
- 22934 multiletter control sequences out of 15000+600000
- 13091 words of font info for 49 fonts, out of 8000000 for 9000
+ 20030 strings out of 494893
+ 364567 string characters out of 6178672
+ 602325 words of memory out of 5000000
+ 22834 multiletter control sequences out of 15000+600000
+ 9104 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,17n,62p,861b,1249s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmtt8.pfb>
-Output written on 10-collectionsrep2-and-exceptions.pdf (30 pages, 215138 bytes
-).
+ 58i,17n,62p,841b,1236s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on 11-JUnitTests.pdf (13 pages, 121782 bytes).
 PDF statistics:
- 961 PDF objects out of 1000 (max. 8388607)
- 894 compressed objects within 9 object streams
- 66 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 453 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

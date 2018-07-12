@@ -1,0 +1,186 @@
+\input{../templates/course_definitions}
+\input{../templates/course_information}
+
+\usepackage{qtree}
+
+\title{Java}
+\subtitle{JUnit Tests}
+\date{\today}
+
+\usepackage{color}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+	\tableofcontents
+\end{frame}
+
+\section{Introduction to JUnit}
+\subsection{Why to use JUnit?}
+\begin{frame}[fragile]{Why to use JUnit?}
+	We would like to make sure that the following code is working properly:\\
+	\begin{lstlisting}
+		public class Book{
+			public Book(Author author){...}
+			
+			private int page = 1;
+			private Author author;
+			
+			public void turnOver(int pages){
+				page+=pages;
+			}
+			
+			public void setAuthor(Author author){
+				this.author = author;
+			}
+			
+			public Author getAuthor(){
+				return author;
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Why to use JUnit?}
+	We modify the code as we learned last time:\\
+	\begin{lstlisting}
+	public class Book{
+		public Book(Author author){...}
+		
+		private int page = 0;
+		private Author author;
+		
+		public void turnOver(int pages){
+			if(page+pages<1){throw new InvalidArgumentException();}
+			page+=pages;
+		}
+		
+		public void setAuthor(Author author){
+			if(author==null){throw new NullPointerException();}
+			this.author = author;
+		}
+		
+		public Author getAuthor(){
+			return author;
+		}
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Why to use JUnit?}
+	\large But how can we make sure that the implementation got all the methods and functionality we would like it to have (Thinking about tasks given by a client)?\\\vspace{0.5cm}
+	\pause
+	That is why we would like to \textbf{test} what we have got!
+\end{frame}
+
+\begin{frame}{Why to use JUnit?}
+	For testing we need the following:
+	
+	\vspace{0.25cm}\begin{tabular}{rl}
+		Test classes/code& This will contain methods to test our code. It will have to\\& be initializable by the default constructor\vspace{0.25cm}\\
+		Test methods& Mathods which are marked as test methods. They will\\& have to be public, should therefor not take parameters\\& and should return void.\vspace{0.25cm}\\\vspace{0.25cm}
+		Test case& A test case is some given test values with which one would like to test the given peace of software.\\\vspace{0.25cm}
+		Test framework& We will be using JUnit 4 as test framework
+	\end{tabular}
+\end{frame}
+
+\subsection{What to keep in mind}
+\begin{frame}{What to keep in mind}
+	\begin{itemize}
+		\item Use an extra test class seperated from the rest of the code
+		\item You can name you test class how you want to, but *Test is common
+		\item Your cases should test atomary parts of your code \textbf{AND} how those parts are working together
+		\item Do not even try to test your compiler with this
+	\end{itemize}
+\end{frame}
+
+
+\subsection{How to use and build test classes}
+\begin{frame}{Assert}
+	Importing org.junit.Assert.* we can use the assert method:\\
+	\vspace{0.25cm}
+	\begin{tabular}{rl}
+		assertEqual(Object exp, Object act)&Tests whether two Objects are equal\\
+		assertNotNull(Object object)&Object is not null?\\
+		assertSame(Object exp, Object act)&Objects same\\
+		assertNotSame(Object unexp, Object act)&Objects not identical\\
+		assertTrue(boolean condition)&Tests condition\\
+		assertFalse(boolean condition)&Tests condition\\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}{Annotations}
+	We can also put several annotations in front of our tests (JUnit 4):\\
+	\vspace{0.25cm}
+	\begin{tabular}{rl}
+		@Test&Mark the following method as test case\\
+		@Test(expected=\dots Exception.class)&Mark that exception is espected\\
+		@Before&Will be executed \textbf{before} every test method\\
+		@After&Will be executed \textbf{after} every test method\\
+		
+	\end{tabular}
+\end{frame}
+
+
+\begin{frame}[fragile]{A simple test class}
+	\begin{lstlisting}
+		import java.util.*;
+		import org.junit.*;
+		
+		public class BookTest{
+			//NO CONSTRUCTOR FOR TEST CLASSES!
+			@Test
+			public void turnOverTest(){
+				Author douglas = new Author("Douglas Adams");
+				Book thgttg = new Book(douglas);
+				book.turnOver(5);
+				assertEquals(6,book.getPage);
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Using the magic of JUnit}
+	\begin{lstlisting}
+		public class BookTest{
+			private Book book;
+			private Author author
+			@Before
+			public void setUp(){
+				autor = new Author("Douglas Adams");
+				book = new Book(douglas);	
+			}
+			@Test
+			public void turnOverTest(){
+				book.turnOver(5);
+				assertEquals(6,book.getPage);
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Testing to throw exceptions}
+	\begin{lstlisting}
+		public class BookTest{
+			private Book book;
+			private Author author
+			
+			@Before
+			public void setUp(){
+				autor = new Author("Douglas Adams");
+				book = new Book(douglas);	
+			}
+			
+			@Test (expected = InvalidArgumentException.class)
+			public void turnOverTest(){
+				book.turnOver(-5);
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\end{document}
