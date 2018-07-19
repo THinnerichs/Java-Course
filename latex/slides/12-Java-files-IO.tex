@@ -1,0 +1,136 @@
+\input{../templates/course_definitions}
+\input{../templates/course_information}
+
+\usepackage{qtree}
+
+\title{Java}
+\subtitle{Java files IO}
+\date{\today}
+
+\usepackage{color}
+
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+	\tableofcontents
+\end{frame}
+
+\section{How to use streams}
+\begin{frame}{Streams}
+	A stream can be defined as a sequence of data. We got two kinds of streams in Java:
+	\vfill
+	\begin{tabular}{rl}
+		InPutStream&is used to read data from a source\\
+		OutPutStream&is used for writing data to a destination
+	\end{tabular}
+	\vfill
+	Many implementations can be found in the module \textbf{java.io}.
+\end{frame}
+
+\begin{frame}[fragile]{File Streams}
+	Byte streams used to perform input and ouput of 8-bit bytes. The most common streams for file reading and writing are \textbf{FileInputStream} and \textbf{FileOutputStream}:\\
+	
+\end{frame}
+
+\begin{frame}[fragile]{How to use file streams}
+	We would like to copy a file "trateotu.txt":
+	\begin{lstlisting}
+	import java.io.*
+	... main(String args[]) throws IOException {
+		FileInputStream in = null;
+		FileOutputStream out = null;
+		
+		try {
+			in = new FileInputStream("trateotu-input.txt");
+			out = new FileOutputStream("trateotu-output.txt");
+			
+			int c;
+			while ((c = in.read()) != -1) {
+				out.write(c);
+			}
+		}
+		finally {
+			if (in != null) {
+				in.close();
+			}
+			if (out != null) {
+				out.close();
+			}
+		}
+	}
+	\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}{Other useful methods for InputStream}
+	\begingroup
+	\def\arraystretch{1.5}
+	\begin{tabular}{rp{8cm}}
+		public void close()&releases any system resources associated with the file\\
+		protected void finalize()&cleans up connection to the file, closes stream when there are no more references\\
+		public int read(int r)&this method reads the specified byte of data\\
+		public int available()& returns the amount of bytes which can be read from the input stream
+	\end{tabular}
+	\endgroup
+\end{frame}
+
+\begin{frame}{Othe useful methods for OutputStream}
+	
+	\begingroup
+	\def\arraystretch{1.5}
+	\begin{tabular}{rp{8cm}}
+		public void close()&closes output stream, releases any resources\\
+		public void finalize()&see InputStream\\
+		public void write(int w)&writes the specified byte
+	\end{tabular}
+	\endgroup
+\end{frame}
+
+\begin{frame}[fragile]{Character Streams}
+	Instead of the previously used Byte streams, we can also use \textbf{Character streams}. \textbf{Character streams} are able to perform input and output for 16-bit unicode:
+	
+	\begin{lstlisting}
+		in = new FileReader("ltuae-input.txt);
+		out = new FileReader("ltuae-output.txt);
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}{User interaction}
+	Now knowing about streams we can also perform command line input/output. Java provides the following three streams, given by your OS:\\
+	\vfill
+	\begingroup
+	\def\arraystretch{1.5}
+	\begin{tabular}{r p{8cm}}
+		Standard Input&is used to feed data into you program, is your standard input stream, represented as \textbf{System.in}\\
+		Standard Output & is used to output the data produced by the user's program, represented as \textbf{System.out}\\
+		Standard Error&is used to output the error data produced by our program, \textbf{System.err}
+	\end{tabular}
+	\endgroup
+\end{frame}
+
+\begin{frame}[fragile]{First Console IO program}
+	We will now read standard input stream until the user types a "q":\\
+	\begin{lstlisting}
+		InputStreamReader cin = null;
+		
+		try {
+			cin = new InputStreamReader(System.in);
+			System.out.println("Enter characters, 'q' to quit.");
+			char c;
+			do {
+				c = (char) cin.read();
+				System.out.print(c);
+			} while(c != 'q');
+		}
+		finally {
+			if (cin != null) {
+				cin.close();
+			}
+		}
+	\end{lstlisting}
+\end{frame}
+
+\end{document}

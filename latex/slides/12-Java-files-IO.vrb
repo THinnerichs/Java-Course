@@ -1,0 +1,20 @@
+\frametitle{First Console IO program}
+We will now read standard input stream until the user types a "q":\\
+	\begin{lstlisting}
+		InputStreamReader cin = null;
+
+		try {
+			cin = new InputStreamReader(System.in);
+			System.out.println("Enter characters, 'q' to quit.");
+			char c;
+			do {
+				c = (char) cin.read();
+				System.out.print(c);
+			} while(c != 'q');
+		}
+		finally {
+			if (cin != null) {
+				cin.close();
+			}
+		}
+	\end{lstlisting}
